@@ -4,11 +4,11 @@
 ## Create Firebase database
 
 ## Movie search
-
+- As a user, I would like to search a movie by what is playing near me.
 ## Restaurant serach
-
+- As a user, I would like to search for a restaurant to eat at the best time before the movie.
 ## Taxi search
-
+As a user, I would like to reserve a ride service to schedule a time for the restaurant.
 ## Buy a movie ticket
 
 
@@ -18,6 +18,8 @@
 ## Search Screen
 
 ### Create wireframe
+- The Main Screen
+![The Main Screen page](./assets/images/main.page.jpeg)
 
 #### Create HTML
 
@@ -26,16 +28,22 @@
 	- Create functions
 
 		- Build html
+			- Build html (or jquery) for the page so we can call it anytime we like. and maybe able to call it multiple times.
 
 		- Destroy html
+			- Build a function to destroy our html so we can build a new one on the screen.
 
 		- Fandango API call
+			- Build a url, with the necessary information and create a function so we can call it anytime.
 
 		- Save results in Firebase
+			- whatever results we got, lets save it in firebase for later retrival
 
 ## Result screen
 
 ### Create Wireframe
+- The movie result page
+![The Result Page](./assets/images/movie.result.page.jpeg)
 
 #### Create functions
 
@@ -64,6 +72,8 @@
 ## User Selected screen
 
 ### wireframe
+- The movie selected page
+![The selected Page](./assets/images/movie.selected.jpeg)
 
 #### Create functions
 
@@ -84,7 +94,8 @@
 ## Search Screen
 
 ### Create wireframe
-
+- The restaurant page
+![The restaurant Page](./assets/images/Restaurant.category.choice.jpeg)
 #### Create JavaScript
 
 - Create functions
@@ -100,7 +111,8 @@
 ## Result screen
 
 ### Create Wireframe
-
+![The restaurant selection Page](./assets/images/select.restaurant.page.jpeg)
+#### Create JavaScript
 #### Create functions
 
 - Build HTML
