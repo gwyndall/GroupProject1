@@ -19,7 +19,7 @@ As a user, I would like to reserve a ride service to schedule a time for the res
 
 ### Create wireframe
 - The Main Screen
-![The Main Screen page](./assets/images/main.page.jpeg)
+![The Main Screen page](./assets/Images/main.page.jpeg)
 
 #### Create HTML
 
@@ -43,7 +43,7 @@ As a user, I would like to reserve a ride service to schedule a time for the res
 
 ### Create Wireframe
 - The movie result page
-![The Result Page](./assets/images/movie.result.page.jpeg)
+![The Result Page](./assets/Images/movie.result.page.jpeg)
 
 #### Create functions
 
@@ -73,7 +73,7 @@ As a user, I would like to reserve a ride service to schedule a time for the res
 
 ### wireframe
 - The movie selected page
-![The selected Page](./assets/images/movie.selected.jpeg)
+![The selected Page](./assets/Images/movie.selected.jpeg)
 
 #### Create functions
 
@@ -95,7 +95,7 @@ As a user, I would like to reserve a ride service to schedule a time for the res
 
 ### Create wireframe
 - The restaurant page
-![The restaurant Page](./assets/images/Restaurant.category.choice.jpeg)
+![The restaurant Page](./assets/Images/Restaurant.category.choice.jpeg)
 #### Create JavaScript
 
 - Create functions
@@ -111,7 +111,7 @@ As a user, I would like to reserve a ride service to schedule a time for the res
 ## Result screen
 
 ### Create Wireframe
-![The restaurant selection Page](./assets/images/select.restaurant.page.jpeg)
+![The restaurant selection Page](./assets/Images/select.restaurant.page.jpeg)
 #### Create JavaScript
 #### Create functions
 
