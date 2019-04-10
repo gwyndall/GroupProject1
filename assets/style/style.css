@@ -4,7 +4,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        background: #e74c3c !important;
+        background: #e74c3c;
         }
     
         .searchbar{
@@ -49,3 +49,19 @@
         border-radius: 50%;
         color:white;
         }
+
+        .featured-text {
+            padding: 2rem;
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid;
+            border-color: aqua;
+          }
+
+          .bg-black {
+            background-color: #161616 !important;
+          }
+
+          .projects-section .project-text {
+            padding: 3rem;
+            font-size: 90%;
+          }
