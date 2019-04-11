@@ -25,11 +25,13 @@ function searchYelp() {
                 var imgURL = respData.image_url;
                 
                 // Creating an element to hold the still image
-                var image = $("<img>").attr("src", imgURL);
+                var image = $("<img>").attr("src", imgURL).attr("width", "200px");
                
                 // Appending the image
                 gifDiv.append(image);
                 
+                var busName = respData.name;
+                var nameField = $("<p class='rated'>").text(busName);
                 // Storing the rating data
                 var rating = respData.rating;
                 
@@ -37,7 +39,7 @@ function searchYelp() {
                 var pRating = $("<p class='rated'>").text("Rated: " + rating);
                 
                 // Displaying the rating
-                gifDiv.append(pRating);
+                gifDiv.append(nameField).append(pRating);
                 
                 // Adding new gifs to the top of the display
                 $("#restaurants").prepend(gifDiv);
