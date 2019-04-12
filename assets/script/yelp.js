@@ -34,7 +34,7 @@ function searchYelp() {
                 var nameField = $("<p class='rated'>").text(busName);
                 // Storing the rating data
                 var rating = respData.rating;
-                
+                // rating(rating);
                 // Creating an element to have the rating displayed
                 var pRating = $("<p class='rated'>").text("Rated: " + rating);
                 
@@ -46,4 +46,43 @@ function searchYelp() {
 
      }});
 
+    }
+    function rating(stars) {
+        switch(stars) {
+            case 0:
+              // code block
+              break;
+            case .5:
+              // code block
+              break;
+            case 1:
+              // code block
+              break;
+            case 1.5:
+              // code block
+              break;
+            case 2:
+              // code block
+              break;
+            case 2.5:
+              // code block
+              break;
+            case 3:
+              // code block
+              break;
+            case 3.5:
+              // code block
+              break;
+            case 4:
+              // code block
+              break;
+            case 4.5:
+              // code block
+              break;
+            case 5:
+              // code block
+              break;
+            default:
+              // code block
+          }
     }
