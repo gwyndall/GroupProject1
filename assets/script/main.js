@@ -89,7 +89,7 @@ $(document).ready(function () {
 
 
     function displayMovieTimes(response){
-        console.log(response[0].rootId);
+        console.log(response[0].title);
     }
 
     // function youtubeApiCall(){
