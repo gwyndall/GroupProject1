@@ -1,8 +1,8 @@
 function searchYelp() {
     
 
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972";
     var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx" 
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=delis&latitude=37.786882&longitude=-122.399972";
     
     $.ajax({
         url: queryURL,
