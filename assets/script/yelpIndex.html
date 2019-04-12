@@ -8,6 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css"> -->
+    <style>
+        #restaurants {
+            display: inline-flex;
+           flex-flow: wrap;
+        }
+        .cards {
+            padding: 20px;
+            margin: 20px auto;
+            
+         }
+    </style>
 </head>
 
 <body>
@@ -17,26 +28,15 @@
 
     </div>
     <div class="box">
+        <div id="searchBox" class="box">
+            <input type="text" id="searchInput">
+            <input type="button" value="Search" id="searchButton">
+        </div>
         <div id="restaurants">        </div>
 
 
     </div>
-    <div class="box">
-
-        <form>
-
-            <div class="inputTitle">Train Name </div>
-            <input type="text" name="name" id="input-name"><br>
-            <div class="inputTitle">Destination </div>
-            <input type="text" name="destination" id="input-dest"><br>
-            <div class="inputTitle"> First Train Time (HH:mm - military time)</div>
-            <input type="text" name="firstTime" id="input-time"><br>
-            <div class="inputTitle"> Frequency (min)</div>
-            <input type="text" name="frequency" id="input-frequency"><br>
-            <input type="submit" value="Submit" id="submitBtn">
-
-        </form>
-    </div>
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./yelp.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
