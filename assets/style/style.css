@@ -65,3 +65,13 @@
             padding: 3rem;
             font-size: 90%;
           }
+
+          .projects-section {
+            padding: 10rem 0;
+          }
+          
+          .projects-section .featured-text {
+            padding: 2rem;
+          }
+
+          

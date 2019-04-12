@@ -1,0 +1,3078 @@
+﻿[
+  {
+    "tmsId": "MV010777880000",
+    "rootId": "15054143",
+    "subType": "Feature Film",
+    "title": "Shazam!",
+    "releaseYear": 2019,
+    "releaseDate": "2019-04-05",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "longDescription": "We all have a superhero inside of us -- it just takes a bit of magic to bring it out. In 14-year-old Billy Batson's case, all he needs to do is shout out one word to transform into the adult superhero Shazam. Still a kid at heart, Shazam revels in the new version of himself by doing what any other teen would do -- have fun while testing out his newfound powers. But he'll need to master them quickly before the evil Dr. Thaddeus Sivana can get his hands on Shazam's magical abilities.",
+    "shortDescription": "A 14-year-old transforms into the adult superhero Shazam and battles the evil Dr. Thaddeus Sivana.",
+    "topCast": [
+      "Zachary Levi",
+      "Mark Strong",
+      "Asher Angel"
+    ],
+    "directors": [
+      "David F. Sandberg"
+    ],
+    "officialUrl": "http://www.shazammovie.com/",
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations"
+    ],
+    "runTime": "PT02H12M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "Shazam! (2019)",
+        "lang": "en"
+      },
+      "uri": "assets/p15054143_p_v5_af.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T10:45",
+        "quals": "Closed Captioned|Descriptive Audio Services|Mega Screen",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T12:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T13:30",
+        "quals": "Mega Screen|Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:20",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T16:20",
+        "quals": "Mega Screen|Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:55",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:00",
+        "quals": "Mega Screen|Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T20:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T21:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T21:45",
+        "quals": "Mega Screen|Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T22:30",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T11:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T12:00",
+        "quals": "Descriptive Video Services|Recliners|Reserved Seating|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T15:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T11:05",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T12:30",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T14:00",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T15:30",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:55",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T18:30",
+        "quals": "Descriptive Audio Services|Open-Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:00",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:55",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:25",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:55",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182201&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T11:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T13:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T17:15",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T19:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T21:15",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011861920000",
+    "rootId": "15849524",
+    "subType": "Feature Film",
+    "title": "The Mustang",
+    "releaseYear": 2019,
+    "releaseDate": "2019-01-31",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Drama"
+    ],
+    "longDescription": "A violent convict is given the chance to participate in a rehabilitation therapy program centered around the training of wild mustangs.",
+    "shortDescription": "A convict is given the chance to participate in a program involving the training of wild mustangs.",
+    "topCast": [
+      "Matthias Schoenaerts",
+      "Gideon Adlon",
+      "Bruce Dern"
+    ],
+    "directors": [
+      "Laure de Clermont-Tonnerre"
+    ],
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "3.5"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT01H36M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15849524_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T10:50",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T13:20",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T15:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:15",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T20:10",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T22:00",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=192638&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011931130000",
+    "rootId": "15955710",
+    "subType": "Feature Film",
+    "title": "Us",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-08",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "longDescription": "Accompanied by her husband, son and daughter, Adelaide Wilson returns to the beachfront home where she grew up as a child. Haunted by a traumatic experience from the past, Adelaide grows increasingly concerned that something bad is going to happen. Her worst fears soon become a reality when four masked strangers descend upon the house, forcing the Wilsons into a fight for survival. When the masks come off, the family is horrified to learn that each attacker takes the appearance of one of them.",
+    "shortDescription": "A couple and their two children fight for survival against four strangers who look just like them.",
+    "topCast": [
+      "Lupita Nyong'o",
+      "Winston Duke",
+      "Elisabeth Moss"
+    ],
+    "directors": [
+      "Jordan Peele"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT01H56M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15955710_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T10:55",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T12:35",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T15:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:40",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T18:55",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T20:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T22:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T19:10",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:55",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:50",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:45",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:25",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:30",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T22:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=189732&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T11:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T14:15",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T18:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T19:45",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011983760000",
+    "rootId": "16080296",
+    "subType": "Feature Film",
+    "title": "Pet Sematary",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-16",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "longDescription": "Dr. Louis Creed and his wife, Rachel, relocate from Boston to rural Maine with their two young children. The couple soon discover a mysterious burial ground hidden deep in the woods near their new home. When tragedy strikes, Louis turns to his neighbor Jud Crandall, setting off a perilous chain reaction that unleashes an unspeakable evil with horrific consequences.",
+    "shortDescription": "A couple and their children move near a mysterious burial ground that unleashes an unspeakable evil.",
+    "topCast": [
+      "Jason Clarke",
+      "Amy Seimetz",
+      "John Lithgow"
+    ],
+    "directors": [
+      "Kevin Kölsch",
+      "Dennis Widmyer"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT01H41M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p16080296_v_v5_ac.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T12:20",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:45",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T15:50",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:35",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T20:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T22:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T14:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T17:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T19:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T22:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:00",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:30",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:55",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T12:20",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T14:40",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T15:35",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:20",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T17:00",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T17:55",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:20",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T20:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:40",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T22:30",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=190753&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T13:55",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T16:20",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T18:45",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011666770000",
+    "rootId": "15630247",
+    "subType": "Feature Film",
+    "title": "Dumbo",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-29",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Children"
+    ],
+    "audience": "Children",
+    "longDescription": "Struggling circus owner Max Medici enlists a former star and his two children to care for Dumbo, a baby elephant born with oversized ears. When the family discovers that the animal can fly, it soon becomes the main attraction -- bringing in huge audiences and revitalizing the run-down circus. The elephant's magical ability also draws the attention of V.A. Vandevere, an entrepreneur who wants to showcase Dumbo in his latest, larger-than-life entertainment venture.",
+    "shortDescription": "A circus owner enlists a man and his two children to care for a newborn elephant that can fly.",
+    "topCast": [
+      "Colin Farrell",
+      "Michael Keaton",
+      "Danny DeVito"
+    ],
+    "directors": [
+      "Tim Burton"
+    ],
+    "officialUrl": "https://movies.disney.com/dumbo-2019",
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations"
+    ],
+    "runTime": "PT01H52M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15630247_v_v5_ab.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T12:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T13:35",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T16:00",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:05",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T21:20",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:00",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T11:00",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T12:35",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:35",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T15:10",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:10",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T17:45",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T18:55",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T20:20",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:35",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=187007&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T12:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T15:15",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T17:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T20:45",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV009997880000",
+    "rootId": "14060049",
+    "subType": "Feature Film",
+    "title": "Captain Marvel",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-08",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science fiction",
+      "Fantasy"
+    ],
+    "longDescription": "Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S. Air Force pilot Carol Danvers. With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers to end the war with the evil Skrulls.",
+    "shortDescription": "Captain Marvel gets caught in the middle of an intergalactic war between two extraterrestrial races.",
+    "topCast": [
+      "Brie Larson",
+      "Samuel L. Jackson",
+      "Ben Mendelsohn"
+    ],
+    "directors": [
+      "Anna Boden",
+      "Ryan Fleck"
+    ],
+    "officialUrl": "https://marvel.com/movies/movie/225/captain_marvel",
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "2.5"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT02H04M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p14060049_v_v5_ad.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T13:55",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T16:30",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:40",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T22:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T12:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T15:10",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:35",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:25",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:05",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:50",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=173234&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T12:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T15:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T18:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T21:00",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011998550000",
+    "rootId": "16101687",
+    "subType": "Feature Film",
+    "title": "The Best of Enemies",
+    "releaseYear": 2019,
+    "releaseDate": "2019-04-05",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Historical drama"
+    ],
+    "longDescription": "The true story of the unlikely relationship between Ann Atwater, an outspoken civil rights activist, and C.P. Ellis, a local Ku Klux Klan leader. During the racially charged summer of 1971, Atwater and Ellis come together to co-chair a community summit on the desegregation of schools in Durham, N.C. The ensuing debate and battle soon lead to surprising revelations that change both of their lives forever.",
+    "shortDescription": "A civil rights activist and a Ku Klux Klan leader hold a community summit on school desegregation.",
+    "topCast": [
+      "Taraji P. Henson",
+      "Sam Rockwell",
+      "Babou Ceesay"
+    ],
+    "directors": [
+      "Robin Bissell"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT02H13M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "The Best of Enemies (2019)",
+        "lang": "en"
+      },
+      "uri": "assets/p16101687_p_v5_aa.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:30",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:30",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T16:55",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T21:35",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:25",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T12:50",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:40",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:40",
+        "quals": "Descriptive Audio Services|Open-Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:10",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:50",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T22:05",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=191057&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T11:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T14:00",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T16:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T20:15",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV012071700000",
+    "rootId": "16220419",
+    "subType": "Feature Film",
+    "title": "Ash Is Purest White",
+    "releaseYear": 2018,
+    "releaseDate": "2018-05-11",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "longDescription": "In an industrial city in China, a young dancer named Qiao falls in love with a mobster named Bin. When a fight breaks out between rival gangs, Qiao uses a gun to protect Bin and is sent to prison for five years.",
+    "shortDescription": "A dancer uses a gun to protect her mobster boyfriend and is sent to prison for five years.",
+    "topCast": [
+      "Zhao Tao",
+      "Liao Fan",
+      "Feng Xiaogang"
+    ],
+    "directors": [
+      "Jia Zhangke"
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT02H21M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "Ash Is Purest White (2018)",
+        "lang": "en"
+      },
+      "uri": "assets/p16220419_p_v5_aa.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:35",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191959&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:25",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191959&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:20",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=191959&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011951800000",
+    "rootId": "15987600",
+    "subType": "Feature Film",
+    "title": "Five Feet Apart",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-15",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "longDescription": "Seventeen-year-old Stella spends most of her time in the hospital as a cystic fibrosis patient. Her life is full of routines, boundaries and self-control -- all of which get put to the test when she meets Will, an impossibly charming teen who has the same illness. There's an instant flirtation, though restrictions dictate that they must maintain a safe distance between them. As their connection intensifies, so does the temptation to throw the rules out the window and embrace that attraction.",
+    "shortDescription": "Two cystic fibrosis patients fall in love but must stay five feet apart at all times.",
+    "topCast": [
+      "Haley Lu Richardson",
+      "Cole Sprouse",
+      "Moises Arias"
+    ],
+    "directors": [
+      "Justin Baldoni"
+    ],
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "2"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations"
+    ],
+    "runTime": "PT01H56M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15987600_v_v5_ab.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T11:45",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190137&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T14:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190137&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T16:35",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190137&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T19:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190137&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T21:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=190137&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV009050350000",
+    "rootId": "13022653",
+    "subType": "Feature Film",
+    "title": "How to Train Your Dragon: The Hidden World",
+    "releaseYear": 2019,
+    "releaseDate": "2019-02-22",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Comedy",
+      "Animated",
+      "Children"
+    ],
+    "audience": "Children",
+    "longDescription": "All seems well on the island of Berk as Vikings and dragons live together in peace and harmony. Now a Viking leader, Hiccup finds himself increasingly attracted to Astrid, while his beloved dragon Toothless meets an enchanting creature who captures his eye. When the evil Grimmel launches a devious plan to wipe out all the dragons, Hiccup must unite both clans to find Caldera -- a hidden land that holds the key to saving Toothless and his flying friends.",
+    "shortDescription": "Now a Viking leader, Hiccup must help Toothless save his beloved dragon clan from the evil Grimmel.",
+    "topCast": [
+      "Jay Baruchel",
+      "America Ferrera",
+      "F. Murray Abraham"
+    ],
+    "directors": [
+      "Dean DeBlois"
+    ],
+    "officialUrl": "https://www.dragonshiddenworld.com/",
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "3.5"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG"
+      }
+    ],
+    "advisories": [
+      "Adult Situations"
+    ],
+    "runTime": "PT01H44M",
+    "animation": "Animated",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p13022653_v_v5_ac.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T12:50",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=164040&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T15:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=164040&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T18:20",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=164040&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011725060000",
+    "rootId": "15674164",
+    "subType": "Feature Film",
+    "title": "Green Book",
+    "releaseYear": 2018,
+    "releaseDate": "2018-09-11",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Comedy drama"
+    ],
+    "longDescription": "Dr. Don Shirley is a world-class African-American pianist who's about to embark on a concert tour in the Deep South in 1962. In need of a driver and protection, Shirley recruits Tony Lip, a tough-talking bouncer from an Italian-American neighborhood in the Bronx. Despite their differences, the two men soon develop an unexpected bond while confronting racism and danger in an era of segregation.",
+    "shortDescription": "Two men confront racism and danger while taking a road trip through the Deep South in 1962.",
+    "topCast": [
+      "Viggo Mortensen",
+      "Mahershala Ali",
+      "Linda Cardellini"
+    ],
+    "directors": [
+      "Peter Farrelly"
+    ],
+    "officialUrl": "http://www.greenbookfilm.com/",
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "3.5"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Violence"
+    ],
+    "runTime": "PT02H10M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15674164_v_v5_ad.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T13:15",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187322&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T17:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=187322&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV010796280000",
+    "rootId": "15054143",
+    "subType": "Feature Film",
+    "title": "Shazam! 3D",
+    "releaseYear": 2019,
+    "releaseDate": "2019-04-05",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "longDescription": "We all have a superhero inside of us -- it just takes a bit of magic to bring it out. In 14-year-old Billy Batson's case, all he needs to do is shout out one word to transform into the adult superhero Shazam. Still a kid at heart, Shazam revels in the new version of himself by doing what any other teen would do -- have fun while testing out his newfound powers. But he'll need to master them quickly before the evil Dr. Thaddeus Sivana can get his hands on Shazam's magical abilities.",
+    "shortDescription": "A 14-year-old transforms into the adult superhero Shazam and battles the evil Dr. Thaddeus Sivana.",
+    "topCast": [
+      "Zachary Levi",
+      "Mark Strong",
+      "Asher Angel"
+    ],
+    "directors": [
+      "David F. Sandberg"
+    ],
+    "officialUrl": "http://www.shazammovie.com/",
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations"
+    ],
+    "runTime": "PT02H12M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "Shazam! 3D (2019)",
+        "lang": "en"
+      },
+      "uri": "assets/p15054143_p_v5_ac.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T15:10",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T18:25",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "10654",
+          "name": "ArcLight La Jolla"
+        },
+        "dateTime": "2019-04-10T20:45",
+        "quals": "Descriptive Audio Services|Closed Captioned",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAWTZ&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T12:45",
+        "quals": "Closed Captioned|Descriptive Video Services|RealD 3D|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:00",
+        "quals": "Closed Captioned|Descriptive Video Services|RealD 3D|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T19:00",
+        "quals": "Closed Captioned|Descriptive Video Services|RealD 3D|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T22:00",
+        "quals": "Closed Captioned|Descriptive Video Services|RealD 3D|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=182362&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:10",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=182362&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV012397620000",
+    "rootId": "16646311",
+    "subType": "Feature Film",
+    "title": "The Public",
+    "releaseYear": 2018,
+    "releaseDate": "2018-01-31",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Drama"
+    ],
+    "longDescription": "An act of civil disobedience turns into a standoff with police when homeless people in Cincinnati take over the public library to seek shelter from the bitter cold.",
+    "shortDescription": "Homeless people in Cincinnati take over the public library to seek shelter from the bitter cold.",
+    "topCast": [
+      "Alec Baldwin",
+      "Emilio Estevez",
+      "Jena Malone"
+    ],
+    "directors": [
+      "Emilio Estevez"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "PG-13"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Nudity"
+    ],
+    "runTime": "PT01H59M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "The Public (2018)",
+        "lang": "en"
+      },
+      "uri": "assets/p16646311_p_v5_aa.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T11:40",
+        "quals": "AMC Independent|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=194975&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T12:30",
+        "quals": "AMC Independent|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=194975&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T15:30",
+        "quals": "AMC Independent|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=194975&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:30",
+        "quals": "AMC Independent|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=194975&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:20",
+        "quals": "AMC Independent|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=194975&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV012253760000",
+    "rootId": "16457223",
+    "subType": "Feature Film",
+    "title": "Hotel Mumbai",
+    "releaseYear": 2018,
+    "releaseDate": "2018-09-07",
+    "titleLang": "en-AU",
+    "descriptionLang": "en-AU",
+    "entityType": "Movie",
+    "genres": [
+      "Thriller",
+      "Drama"
+    ],
+    "longDescription": "Terror strikes in the heart of Mumbai, India, as members of Lashkar-e-Taiba storm the Taj Mahal Palace Hotel. Amid the gunfire and mayhem, a brave chef and kitchen worker decide to risk their own lives to try and protect the frightened guests.",
+    "shortDescription": "Guests and staffers fight for their lives when Islamic terrorists storm a hotel in Mumbai, India.",
+    "topCast": [
+      "Armie Hammer",
+      "Dev Patel",
+      "Nazanin Boniadi"
+    ],
+    "directors": [
+      "Anthony Maras"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Graphic Violence"
+    ],
+    "runTime": "PT02H05M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p16457223_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:00",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T15:50",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:40",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:35",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:45",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T13:30",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:30",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:25",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T22:20",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=193492&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T11:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T14:30",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T17:25",
+        "barg": false
+      },
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T20:25",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011636060000",
+    "rootId": "15592224",
+    "subType": "Feature Film",
+    "title": "The Aftermath",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-15",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Historical drama",
+      "Romance"
+    ],
+    "longDescription": "In 1946 Rachael Morgan arrives in the ruins of Hamburg to be reunited with her husband, Lewis, who is a British colonel charged with rebuilding the shattered city. As they set off for their new home, Rachael is stunned to discover that Lewis has made an unexpected decision: They will be sharing the grand house with its previous owners, a German widower and his troubled daughter. In this charged atmosphere, enmity and grief give way to passion and betrayal.",
+    "shortDescription": "In 1946 a British colonel and his wife share a home with a German widower in Hamburg.",
+    "topCast": [
+      "Keira Knightley",
+      "Alexander Skarsgård",
+      "Jason Clarke"
+    ],
+    "directors": [
+      "James Kent"
+    ],
+    "officialUrl": "http://www.foxsearchlight.com/theaftermath/",
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "2"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Situations",
+      "Nudity",
+      "Violence"
+    ],
+    "runTime": "PT01H49M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "The Aftermath (2019)",
+        "lang": "en"
+      },
+      "uri": "assets/p15592224_p_v5_ab.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:05",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T15:45",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T11:30",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T14:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T16:45",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:15",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=186900&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T21:45",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=186900&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV012322320000",
+    "rootId": "16543307",
+    "subType": "Feature Film",
+    "title": "Unplanned",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-29",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "longDescription": "Abby Johnson becomes the youngest clinic director in the history of Planned Parenthood, then a life-changing experience turns her into an anti-abortion activist.",
+    "shortDescription": "Former Planned Parenthood clinic director Abby Johnson becomes an anti-abortion activist.",
+    "topCast": [
+      "Ashley Bratcher",
+      "Brooks Ryan",
+      "Robia Scott"
+    ],
+    "directors": [
+      "Cary Solomon",
+      "Chuck Konzelman"
+    ],
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "1.5"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Situations"
+    ],
+    "runTime": "PT01H46M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": {
+        "content": "Unplanned (2019)",
+        "lang": "en"
+      },
+      "uri": "assets/p16543307_p_v5_aa.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:10",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193978&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:05",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193978&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:50",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193978&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:50",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=193978&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011839900000",
+    "rootId": "15817383",
+    "subType": "Feature Film",
+    "title": "The Beach Bum",
+    "releaseYear": 2019,
+    "releaseDate": "2019-03-09",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Comedy"
+    ],
+    "longDescription": "Moondog is a fun-loving, pot-smoking, beer-drinking writer who lives life on his own terms in Florida. If he can put down the drugs for just one minute, he may finally be able to put his talent to good use and finish the next great American novel.",
+    "shortDescription": "A fun-loving, pot-smoking, beer-drinking writer tries to finish the next great American novel.",
+    "topCast": [
+      "Matthew McConaughey",
+      "Snoop Dogg",
+      "Isla Fisher"
+    ],
+    "directors": [
+      "Harmony Korine"
+    ],
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Nudity",
+      "Strong Sexual Content"
+    ],
+    "runTime": "PT01H35M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15817383_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T13:15",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=188331&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:10",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=188331&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T18:35",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=188331&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:10",
+        "quals": "AMC Independent|Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=188331&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T10:10",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=188331&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T22:10",
+        "quals": "Closed Captioned|Descriptive Audio Services|35mm",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=188331&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV012467190000",
+    "rootId": "16746238",
+    "subType": "Feature Film",
+    "title": "P Storm",
+    "releaseYear": 2019,
+    "releaseDate": "2019",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Action"
+    ],
+    "longDescription": "A woman reports on corrupt officers.",
+    "shortDescription": "A woman reports on corrupt officers.",
+    "topCast": [
+      "Chrissie Chau",
+      "Louis Koo",
+      "Kevin Cheng"
+    ],
+    "directors": [
+      "David Lam"
+    ],
+    "runTime": "PT01H40M",
+    "preferredImage": {
+      "uri": "tvbanners/generic/generic_tvbanners_v5.png"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T14:30",
+        "quals": "AMC Independent|CANTONESE w/ENGLISH SUBTITLE|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=196008&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T16:50",
+        "quals": "AMC Independent|CANTONESE w/ENGLISH SUBTITLE|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=196008&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T19:15",
+        "quals": "AMC Independent|CANTONESE w/ENGLISH SUBTITLE|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=196008&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T21:40",
+        "quals": "AMC Independent|CANTONESE w/ENGLISH SUBTITLE|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=196008&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV010874010000",
+    "rootId": "15173646",
+    "subType": "Feature Film",
+    "title": "The Man Who Killed Don Quixote",
+    "releaseYear": 2018,
+    "releaseDate": "2018-05-18",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
+    "longDescription": "A disillusioned advertising executive is pulled into a time-jumping fantasy when he is mistaken for Sancho Panza.",
+    "shortDescription": "A disillusioned advertising executive is pulled into a time-jumping fantasy.",
+    "topCast": [
+      "Adam Driver",
+      "Jonathan Pryce",
+      "Stellan Skarsgård"
+    ],
+    "directors": [
+      "Terry Gilliam"
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations"
+    ],
+    "runTime": "PT02H13M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15173646_v_v5_ac.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "6855",
+          "name": "AMC La Jolla 12"
+        },
+        "dateTime": "2019-04-10T19:00",
+        "quals": "Alternative Content|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AABAM&m=189666&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV011871630000",
+    "rootId": "15862378",
+    "subType": "Feature Film",
+    "title": "Gloria Bell",
+    "releaseYear": 2018,
+    "releaseDate": "2018-09-07",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Romantic comedy"
+    ],
+    "longDescription": "A free-spirited divorcee spends her nights on the dance floor, joyfully letting loose at clubs around Los Angeles. She soon finds herself thrust into an unexpected new romance, filled with the joys of budding love and the complications of dating.",
+    "shortDescription": "A free-spirited divorcee finds herself thrust into an unexpected and complicated new romance.",
+    "topCast": [
+      "Julianne Moore",
+      "John Turturro",
+      "Michael Cera"
+    ],
+    "directors": [
+      "Sebastián Lelio"
+    ],
+    "qualityRating": {
+      "ratingsBody": "TMS",
+      "value": "3"
+    },
+    "ratings": [
+      {
+        "body": "Motion Picture Association of America",
+        "code": "R"
+      }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Nudity"
+    ],
+    "runTime": "PT01H42M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p15862378_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T12:25",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=192196&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T14:55",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=192196&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T17:20",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=192196&d=2019-04-10"
+      },
+      {
+        "theatre": {
+          "id": "5828",
+          "name": "Town Square 14"
+        },
+        "dateTime": "2019-04-10T19:45",
+        "quals": "Closed Captioned|Descriptive Audio Services",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AAAWJ&m=192196&d=2019-04-10"
+      }
+    ]
+  },
+  {
+    "tmsId": "EV000007634108",
+    "rootId": "13993602",
+    "subType": "Theatre Event",
+    "title": "Howl's Moving Castle -- Studio Ghibli Fest 2017",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "longDescription": "Hayao Miyazaki's classic anime film \"Howl's Moving Castle,\" dubbed in English on Nov. 26 and Nov. 29, and subtitled on Nov. 27; includes an exclusive edition of GKIDS MINIFEST, an ongoing festival of short animated films from around the world.",
+    "shortDescription": "Hayao Miyazaki's anime film \"Howl's Moving Castle,\" dubbed on Nov. 26, and subtitled on Nov. 27.",
+    "runTime": "PT02H15M",
+    "preferredImage": {
+      "uri": "tvbanners/generic/generic_tvbanners_v5.png"
+    },
+    "showtimes": [
+      {
+        "theatre": {
+          "id": "11225",
+          "name": "THE LOT La Jolla"
+        },
+        "dateTime": "2019-04-10T19:00",
+        "barg": false
+      }
+    ]
+  }
+]
