@@ -1,0 +1,27 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.featured-text {
+    border: none !important;
+}
+
+html,
+body,
+.login-box {
+  height: 100%;
+  background: #e74c3c;
+}
+
+.card{
+    background: #e74c3c;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #e74c3c;
+    }
+
