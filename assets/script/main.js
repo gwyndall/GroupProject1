@@ -13,6 +13,7 @@ $(document).ready(function () {
     function main() {
         $("body").append($("<div>").addClass("container h-100").attr("id", "mainContainer"));
         buildMoviePage();
+        
     }
     function buildMoviePage() {
         $("#mainContainer").append($("<div>").addClass("d-flex justify-content-center h-100").attr("id", "secondContainer"));
@@ -30,6 +31,7 @@ $(document).ready(function () {
         destroyMoviePage();
         buildMovieTimesDisplayPage();
         getLocation();
+        makeAPICall();
     });
     //location stuff
     function getLocation() {
@@ -64,9 +66,9 @@ $(document).ready(function () {
     }
     //build the url for api call
     function makeAPICall() {
-        //need a url
-        //make the call'
-        //save it in something
+        //need a url -- done
+        //make the call -- done
+        //save it in something 
         //function to create our URL for the api callß
         // createUrl(queryString);
         queryURL = createUrl();
@@ -78,12 +80,16 @@ $(document).ready(function () {
         });
     }
     function createUrl() {
+        todaysDate = moment().format("YYYY-MM-DD");
         return movieShowtimeUrl + todaysDate + "&lat=" + lat + "&lng=" + long + movieShowtimeAPIKey
         // http://data.tmsapi.com/v1.1/movies/showings?startDate=2019-04-10&lat=32.876709&lng=-117.206601&api_key=stp9q5rsr8afbrsfmmzvzubz
     }
+    // let json = require("./AllMovieshowtimeResponse.json");
+    // displayMovieTimes(json);
+
 
     function displayMovieTimes(response){
-
+        console.log(response[0].rootId);
     }
 
     // function youtubeApiCall(){
@@ -131,20 +137,26 @@ $(document).ready(function () {
         $("#movieImage1").append($("<img>").addClass("img-fluid mb-3 mb-lg-0").attr("src", "./assets/Images/bg-masthead.jpg"));
         $("#row1").append($("<div>").addClass("col-xl-4 col-lg-5").attr("id", "movieText1"));
         $("#movieText1").append($("<div>").addClass("featured-text text-center text-lg-left").attr("id", "column2Div"));
-        $("#column1Div").append($("<h4>").html("Theater Name"));
-        $("#column1Div").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
+        $("#movieText1").append($("<h4>").html("Theater Name"));
+        $("#movieText1").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
 
         //build 2nd row
-        $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters mb-5 mb-lg-0").attr("id", "row2"));
+        $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row2"))
         $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieImage2"));
         $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
-        $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieText2"));
-        $("#movieText2").append($("<div>").addClass("bg-black text-center h-100 project").attr("id", "column2Text1Div1"));
-        $("#column2Text1Div1").append($("<div>").addClass("d-flex h-100").attr("id", "column2Text1Div2"));
-        $("#column2Text1Div2").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "column2Text1Div3"))
+        $("#row2").append($("<div>").addClass("col-lg-6 bg-black text-center").attr("id", "movieText2"));
+        $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "column2Text1Div3"))
         $("#column2Text1Div3").append($("<h4>").addClass("text-white").html("Name of the movie"));
         $("#column2Text1Div3").append($("<p>").addClass("mb-0 text-white-50").html("Here we will elaborate more on the plot of the movie or anything else you like to add"));
-        // $("#column2Text1Div3").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
+        $("#column2Text1Div3").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
 
+        $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row3"));
+        $("#row3").append($("<div>").addClass("col-lg-6").attr("id", "movieImage3"));
+        $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-02.jpg"));
+        $("#row3").append($("<div>").addClass("col-lg-6 order-lg-first bg-black text-center").attr("id", "movieText3"));
+        $("#movieText3").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "column3Text1Div3"));
+        $("#column3Text1Div3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
+        $("#column3Text1Div3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
+        $("#column3Text1Div3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
     }
 });
