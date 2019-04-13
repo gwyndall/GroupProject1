@@ -74,4 +74,7 @@
             padding: 2rem;
           }
 
+          .card-header img {
+            text-align: center !important;
+        }
           
