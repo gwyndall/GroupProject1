@@ -1,8 +1,10 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url('../assets/images/bg-movie-results.jpg');
+    background-color: #fff !important;
+    width: 100% !important;
+    height: 100% !important;
 }
-
+/*
 .featured-text {
     border: none !important;
 }
@@ -29,7 +31,11 @@ body,html{
 .border {
     border: 1px solid black;
 }
-
+*/
 .card-header {
     text-align: center !important;
+}
+
+.card-header img {
+    border-radius: 10px;
 }
