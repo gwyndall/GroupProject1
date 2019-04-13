@@ -17,8 +17,8 @@
 
 
 <body id="home" class="scrollspy">
-    <div class="navbar-fixed">
-        <nav class="teal">
+    <!-- <div class="navbar-fixed">
+        <nav class="cinnabar">
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Movie and Dinner Night</a>
@@ -50,19 +50,52 @@
         <li>
             <a href="#contact">Contact</a>
         </li>
+    </ul> -->
+
+    <div class="navbar-fixed">
+        <nav class="cinnabar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Movie and Dinner Night</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger show-on-large">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#movie">Movie</a>
+        </li>
+        <li>
+            <a href="#restaurants">Restaurants</a>
+        </li>
+        <li>
+            <a href="#location">Change location</a>
+        </li>
     </ul>
 
     <div class="container">
 
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        <div style="text-align:center">
+            <h3>What are you in the mood for?</h3>
+        </div>
+
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/output/food-q-c-640-480-9.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/output/food-q-c-640-480-8.jpg"></a>
+            <a class="carousel-item" href="#three!"><img
+                    src="https://food.fnr.sndimg.com/content/dam/images/food/secured/fullset/2015/6/25/0/TE0104_5-The-Duke-RPM-Steak_s4x3.jpg.rend.hgtvcom.966.725.suffix/1435604780701.jpeg"></a>
+            <a class="carousel-item" href="#four!"><img
+                    src="https://d2gk7xgygi98cy.cloudfront.net/1418-4-facebook.jpg"></a>
+            <a class="carousel-item" href="#five!"><img
+                    src="https://www.beijing-kids.com/wp-content/uploads/2017/08/online.jpg"></a>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
 
@@ -71,24 +104,32 @@
             var instances = M.Carousel.init(elems);
         });
 
-        autoplay()   
-            function autoplay() {
-                document.getElementById('.carousel')
+        autoplay()
+        function autoplay() {
+            document.getElementById('.carousel')
             // $('.carousel').carousel('next');
             setTimeout(autoplay, 4500);
         }
-
+        var instance = M.Carousel.init({
+            fullWidth: true
+        });
         // with jQuery
 
         // $(document).ready(function () {
         //     $('.carousel').carousel();
         // });
 
+        // Sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+
 
     </script>
 
-<!--JavaScript at end of body for optimized loading-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
+
 </html>
