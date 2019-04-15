@@ -9,25 +9,20 @@ $(document).ready(function () {
         movieShowtimeAPIKey: "&api_key=qg7adr9qtevgagx4q4tbxbyk",
         queryURL: "",
         foundMovie: null,
+        theaters: null,
         youtubeApi: "https://www.googleapis.com/youtube/v3/videos?key=[YOUR API KEY HERE]&fields=items(snippet(title,tags,channelTitle,publishedAt),statistics(viewCount))&part=snippet,statistics&id=[VIDEOID]"
     }
 
     let movieData = {
         movieName: "",
-        theaters: [{
-            theaterName: "",
-            showTimes: [{
-                time: "",
-                fandangoLink: ""
-            }]
-        }]
+        theaters: []
     }
 
     function itExists(arr, element, arr2){
         returnVal = false
         for (let i = 0; i < arr.length; i++) {
             if(arr[i].theaterName == element){
-                arr[i].showTimes.push(moment(arr2.dateTime));
+                arr[i].showTimes.push({time: moment(arr2.dateTime), fandangoLink: arr2.ticketURI});
                 returnVal = true;
             }else{
                 returnVal = false;
@@ -47,7 +42,7 @@ $(document).ready(function () {
         showTimes.forEach(function (showTime) {
             if (!theaters[showTime.theatre.name]) {
                 if(!itExists(theaters,showTime.theatre.name,showTime)){
-                    newTheater = {theaterName: showTime.theatre.name, showTimes: [], fandangoLink: []}
+                    newTheater = {theaterName: showTime.theatre.name, showTimes: []}
                     theaters.push(newTheater) //= { showTimes: [] }
                 }else{
 
@@ -55,137 +50,10 @@ $(document).ready(function () {
                 }
             }
         })
+        movieData.theaters = theaters;
+        console.log(movieData);
 
-        // if (myArray.indexOf(searchTerm) === -1) {
-        //     console.log("element doesn't exist");
-        //   }
-        //   else {
-        //     console.log("element found");
-        //   }
-
-        // showTimes.forEach(function (showTime) {
-        //     if (!theaters[showTime.theatre.name]) {
-        //         theaters[showTime.theatre.name] = { showTimes: [] }
-        //     } else {
-        //         // console.log(theaters)
-        //         // theaters[showtime.theatre.name].showtimes.push(showtime) 
-        //     }
-        // })
-        console.log(theaters);
-
-        // for (let i = 0; i < showTimes.length; i++) {
-            
-            
-        // }
-
-        for (let i = 0; i < showTimes.length; i++) {
-            
-            
-
-            // for (let j = 0; j < theaters.length; j++) {
-            //     console.log("theaters: " + theaters[j]);
-            //     if(showTimes[i].theatre.name === theaters[j]){
-            //         theaters[j].showTimes.push(showTkmes[i].dateTime);
-            //     }
-                
-            // }
-            
-        }
-        
-        // console.log("before the loop" + theaters);
-        // for (let i = 0; i < showTimeArray.length; i++) {
-        //     let theaterName = showTimeArray[i].theatre.name;
-        //     let theaterShowTime = showTimeArray[i].dateTime;
-        //     let theaterShowtimeArray = [];
-
-        //     console.log("the showtime: "+theaterShowTime);
-        //     for (let j = 0; j < theaters.length; j++) {
-        //         if(!theaters[j].theaterName === theaterName){
-        //             newTheaterName = theaterName;
-        //             newTheaterShowTime = theaterShowTime;
-        //         }else{
-        //             newTheaterShowTime = theaterShowTime;
-        //         }
-        //         theaterShowtimeArray.push(newTheaterShowTime);
-        //         var temptheater = {
-        //             theaterName : newTheaterName,
-        //             showtimes: newTheaterName
-        //         }
-        //     }
-
-        // }
-        // showTimeArray.forEach(function(showTime){
-        //     let theaterName = showTime.theatre.name;
-
-        //     if(typeof theaters[showTime] === 'undefined'){
-        //         console.log ("inside if");
-        //         theaters[showTime] = [];
-        //     }
-        //     theaters[showTime].push(showTime.theatre.name);
-        //     console.log(theaters);
-        // })
-
-
-
-        // showTimeArray.forEach(function(showtime) {
-        //     showTimeArray.forEach(function(showtime){
-        //         if(typeof theaters[showtime.name] === "undefined"){
-        //             theaters[showtime.name] = [];
-        //         }
-        //         theaters[showtime.name].push(showtime);
-        //     })
-
-        // showTimes.forEach(function(showTime) {
-        //     if(typeof showTimesByTheater[showTime.name] === 'undefined') {
-        //         showTimesByTheater[showTime.name] = [];
-        //     }
-
-        //     showTimesByTheater[showTime.name].push(showTime);
-        // });
-
-
-
-
-
-        // let result = movies.find(movie => movie.title == movieAndDinnerObject.movieName);
-        
     }
-
-    // var objArray = [
-    //     { id: 0, name: 'Object 0', otherProp: '321' },
-    //     { id: 1, name: 'O1', otherProp: '648' },
-    //     { id: 2, name: 'Another Object', otherProp: '850' },
-    //     { id: 3, name: 'Almost There', otherProp: '046' },
-    //     { id: 4, name: 'Last Obj', otherProp: '984' }
-    // ];
-
-    // let obj = objArray.find(obj => obj.id == 3);
-
-    // movies = objArray
-    // result = obj
-    // moviename = obj.id 
-
-    // console.log(inventory.find(isCherries)); 
-    // { name: 'cherries', quantity: 5 }
-    // { name: 'cherries', quantity: 5 }
-
-    // function extractInformation(response){
-    //     response.foreach(function(movieInformations){
-
-
-    //         if(typeof response.responseResult.title === "undefined"){
-    //             showTimesByTheater[showtime.name]
-    //         }
-    //     });
-
-    //     // showTimes.forEach(function(showTime) {
-    //     //     if(typeof showTimesByTheater[showTime.name] === 'undefined') {
-    //     //         showTimesByTheater[showTime.name] = [];
-    //     //     }
-
-    //     //     showTimesByTheater[showTime.name].push(showTime);
-    //     // });
-    // }
 
 
     main();
@@ -213,6 +81,7 @@ $(document).ready(function () {
         getLocation();
         //makeAPICall();
         buildMovieData(responseObject.responseResult);
+        createTheaers();
     });
     //location stuff
     function getLocation() {
@@ -275,27 +144,62 @@ $(document).ready(function () {
 
 
 
-    // function createTheaers(){
-    //     array = movieAndDinnerObject.foundMovie;
-    //     array.showtime[0].theater.name;
-    //     //for loop for theaters
-    //     for (let i = 0; i < array.length; i++) {
-    //         if(i<6 ){
-    //             let newTheather = $("<h4>").addClass("btn-primary").attr("id", "theater"+i);
-    //             theatherArray = array.showtime[i].theater
-    //             for (let j = 0; j < array.length; j++) {
-    //                 const element = array[j];
+    function createTheaers(){
+        console.log("the time: "+ moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
+        console.log(movieData.theaters[0].theaterName);
+        
+        $("#theaterBlock1").append($("<h4>").html(movieData.theaters[0].theaterName));
+        createTable(movieData.theaters[0].showTimes);
+        // for (let i = 0; i < movieData.theaters.showTimes.length; i++) {
+        //     const element = array[i];
+            
+        // }
 
-    //             }
+    }
 
-    //             //populate theaters
-    //         }else {
-    //             break;
-    //         }
+        // <div class="card-panel theaterBlock">
+    //      <h4 class="center-align">Theater Name</h4>
+    //      <table class="table striped center bordered responsive-table" id="theaterInfo">
+    //           <thead>
+        //           <tr>
+        //               <th>Theater</th>
+        //               <th>Showtime</th>
+        //           </tr>
+        //           <tr>
+        //               <th>Theater</th>
+        //               <th>Showtime</th>
+        //           </tr>
+        //           <tr>
+        //                <th>Theater</th>
+        //                <th>Showtime</th>
+        //           </tr>
+    //           </thead>
+    //        <tbody>
+    //        </tbody>
+    //     </table>
+    //  </div>
+    function createTable(arr){
+        var newTable = $("<table>");
+        newTable.addClass("table striped center bordered responsive-table").attr("id", "theaterInfo")
+        for (let i = 0; i < arr.length; i++) {
+            console.log("i = "+i);
+            if(i%2 === 0){
+                var newTR = $("<tr>").attr("id", "tr"+i);
+            }
+                var newBtn = createEachButton(arr[i], i);
+                newTR.append($("<th>").attr("id","tr-"+i).append(newBtn));
+                newTable.append(newTR);
+        }
+        $("#theaterBlock1").append(newTable);
+    }
 
-    //     }
-
-    // }
+    function createEachButton(element, index){
+        var showtimeBtn = $("<a>");
+        
+        showtimeBtn.attr("id", "time"+index).attr("href", element.fandangoLink);
+        showtimeBtn.html(moment(element.time).format("hh:mm a"));
+        return showtimeBtn;
+    }
     // for (var i = 0; i < letters.length; i++) {
 
     //     // Inside the loop...
@@ -346,6 +250,8 @@ $(document).ready(function () {
     //   </table>
 
 
+
+
     function buildMovieTimesDisplayPage() {
         //build 1st row
         $("#mainContainer").append($("<section>").addClass("projects-section bg-light").attr("id", "projects"));
@@ -354,9 +260,9 @@ $(document).ready(function () {
         $("#row1").append($("<div>").addClass("col-xl-8 col-lg-7").attr("id", "movieImage1"));
         $("#movieImage1").append($("<img>").addClass("img-fluid mb-3 mb-lg-0").attr("src", "./assets/Images/bg-masthead.jpg"));
         $("#row1").append($("<div>").addClass("col-xl-4 col-lg-5").attr("id", "movieText1"));
-        $("#movieText1").append($("<div>").addClass("featured-text text-center text-lg-left").attr("id", "column2Div"));
-        $("#movieText1").append($("<h4>").html("Theater Name"));
-        $("#movieText1").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
+        $("#movieText1").append($("<div>").addClass("featured-text text-center text-lg-left").attr("id", "theaterBlock1"));
+        // $("#theaterBlock1").append($("<h4>").html("Theater Name"));
+        // $("#movieText1").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
 
         //build 2nd row
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row2"))
