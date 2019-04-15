@@ -135,49 +135,22 @@ $(document).ready(function () {
         // http://data.tmsapi.com/v1.1/movies/showings?startDate=2019-04-10&lat=32.876709&lng=-117.206601&api_key=stp9q5rsr8afbrsfmmzvzubz
     }
 
-
-    // let json = require("./AllMovieshowtimeResponse.json");
-    // displayMovieTimes(json);
-
-
-
-
-
-
     function createTheaers(){
         console.log("the time: "+ moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
         console.log(movieData.theaters[0].theaterName);
         
         $("#theaterBlock1").append($("<h4>").html(movieData.theaters[0].theaterName));
-        createTable(movieData.theaters[0].showTimes);
-        // for (let i = 0; i < movieData.theaters.showTimes.length; i++) {
-        //     const element = array[i];
-            
-        // }
+        $("#theaterBlock1").append(createTable(movieData.theaters[0].showTimes));
+        // createTable(movieData.theaters[0].showTimes);
+
+        $("#theaterBlock2").append($("<h4>").addClass("text-white").html(movieData.theaters[1].theaterName));
+        $("#theaterBlock2").append(createTable(movieData.theaters[1].showTimes));
+
+        $("#theaterBlock3").append($("<h4>").addClass("text-white").html(movieData.theaters[2].theaterName));
+        $("#theaterBlock3").append(createTable(movieData.theaters[2].showTimes));
 
     }
 
-        // <div class="card-panel theaterBlock">
-    //      <h4 class="center-align">Theater Name</h4>
-    //      <table class="table striped center bordered responsive-table" id="theaterInfo">
-    //           <thead>
-        //           <tr>
-        //               <th>Theater</th>
-        //               <th>Showtime</th>
-        //           </tr>
-        //           <tr>
-        //               <th>Theater</th>
-        //               <th>Showtime</th>
-        //           </tr>
-        //           <tr>
-        //                <th>Theater</th>
-        //                <th>Showtime</th>
-        //           </tr>
-    //           </thead>
-    //        <tbody>
-    //        </tbody>
-    //     </table>
-    //  </div>
     function createTable(arr){
         var newTable = $("<table>");
         newTable.addClass("table striped center bordered responsive-table").attr("id", "theaterInfo")
@@ -190,7 +163,8 @@ $(document).ready(function () {
                 newTR.append($("<th>").attr("id","tr-"+i).append(newBtn));
                 newTable.append(newTR);
         }
-        $("#theaterBlock1").append(newTable);
+        // $("#theaterBlock1").append(newTable);
+        return newTable;
     }
 
     function createEachButton(element, index){
@@ -269,19 +243,19 @@ $(document).ready(function () {
         $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieImage2"));
         $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
         $("#row2").append($("<div>").addClass("col-lg-6 bg-black text-center").attr("id", "movieText2"));
-        $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "column2Text1Div3"))
-        $("#column2Text1Div3").append($("<h4>").addClass("text-white").html("Name of the movie"));
-        $("#column2Text1Div3").append($("<p>").addClass("mb-0 text-white-50").html("Here we will elaborate more on the plot of the movie or anything else you like to add"));
-        $("#column2Text1Div3").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
+        $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "theaterBlock2"))
+        // $("#theaterBlock2").append($("<h4>").addClass("text-white").html("Name of the movie"));
+        // $("#theaterBlock2").append($("<p>").addClass("mb-0 text-white-50").html("Here we will elaborate more on the plot of the movie or anything else you like to add"));
+        $("#theaterBlock2").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
 
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row3"));
         $("#row3").append($("<div>").addClass("col-lg-6").attr("id", "movieImage3"));
         $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-02.jpg"));
         $("#row3").append($("<div>").addClass("col-lg-6 order-lg-first bg-black text-center").attr("id", "movieText3"));
-        $("#movieText3").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "column3Text1Div3"));
-        $("#column3Text1Div3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
-        $("#column3Text1Div3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
-        $("#column3Text1Div3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
+        $("#movieText3").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "theaterBlock3"));
+        // $("#theaterBlock3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
+        // $("#theaterBlock3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
+        $("#theaterBlock3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
     }
 
     // todo: ---------------DELETE --------------------
