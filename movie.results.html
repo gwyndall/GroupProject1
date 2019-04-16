@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Movie Search Box</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style/style.css"> 
-   </head>
-  <!-- Coded with love by Mutiullah Samim-->
-  <body>
 
-    <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-        <div class="container">
-    
-          <!-- Featured Project Row -->
-          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-            <div class="col-xl-8 col-lg-7">
-              <img class="img-fluid mb-3 mb-lg-0" src="./assets/Images/bg-masthead.jpg" alt="">
-            </div>
-            <div class="col-xl-4 col-lg-5">
-              <div class="featured-text text-center text-lg-left">
-                  <h4>Theater Name</h4>
-                    <table>
-                      <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                      </tr>
-                      <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
-                      </tr>
-                      <tr>
-                        <td>Ernst Handel</td>
-                        <td>Roland Mendel</td>
-                      </tr>
-                      <tr>
-                        <td>Island Trading</td>
-                        <td>Helen Bennett</td>
-                      </tr>
-                      <tr>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Yoshi Tannamuri</td>
-                      </tr>
-                      <tr>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Giovanni Rovelli</td>
-                      </tr>
-                    </table>
-                
-                <p class="text-black-50 mb-0">This is where we can have all the different times for movie</p> -->
-              </div>
-            </div>
-          </div>
-    
-          <!-- Project One Row -->
-          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-            <div class="col-lg-6">
-              <img class="img-fluid" src="./assets/Images/demo-image-01.jpg" alt="">
-            </div>
-            <div class="col-lg-6">
-              <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                  <div class="project-text w-100 my-auto text-center text-lg-left">
-                    <h4 class="text-white">Name of the movie</h4>
-                    <p class="mb-0 text-white-50">Here we will elaborate more on the plot of the movie or anything else you like to add</p>
-                    <hr class="d-none d-lg-block mb-0 ml-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Project Two Row -->
-          <div class="row justify-content-center no-gutters">
-            <div class="col-lg-6">
-              <img class="img-fluid" src="./assets/Images/demo-image-02.jpg" alt="">
-            </div>
-            <div class="col-lg-6 order-lg-first">
-              <div class="bg-black text-center h-100 project">
-                <div class="d-flex h-100">
-                  <div class="project-text w-100 my-auto text-center text-lg-right">
-                    <h4 class="text-white">Mountains</h4>
-                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                    <hr class="d-none d-lg-block mb-0 mr-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
+<head>
+  <title>Movie Search Box</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CVast+Shadow" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie and Dinner Night</title>
+
+</head>
+
+<body id="home" class="scrollspy">
+
+  <div class="navbar-fixed">
+    <nav class="cinnabar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Movie and Dinner Night</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger show-on-large">
+            <i class="material-icons">menu</i>
+          </a>
+
         </div>
-      </section>
-    
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#movie">Movie</a>
+    </li>
+    <li>
+      <a href="#restaurants">Restaurants</a>
+    </li>
+    <li>
+      <a href="#location">Change location</a>
+    </li>
+  </ul>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <!-- <script src="./assets/script/main.js"></script> -->
-  </body>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="./assets/Images/bg-masthead.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Theater Name</h4>
+            <p class="text-black-50 mb-0">This is where we can have all the different times for movie</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="./assets/Images/demo-image-01.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Name of the movie</h4>
+                <p class="mb-0 text-white-50">Here we will elaborate more on the plot of the movie or anything else you
+                  like to add</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="./assets/Images/demo-image-02.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">Another example of a project with its respective description. These
+                  sections work well responsively as well, try this theme on a small screen!</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <!-- <script src="./assets/script/main.js"></script> -->
+</body>
+
 </html>
-
-  
-  
-  
