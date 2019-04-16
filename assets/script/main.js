@@ -58,7 +58,8 @@ $(document).ready(function () {
 
     main();
     function main() {
-        $("body").append($("<div>").addClass("container h-100").attr("id", "mainContainer"));
+        $("body").append($("<div>").addClass("container h-100 scrollspy").attr("id", "mainContainer"));
+        buildNavbar();
         buildMoviePage();
 
     }
@@ -174,57 +175,17 @@ $(document).ready(function () {
         showtimeBtn.html(moment(element.time).format("hh:mm a"));
         return showtimeBtn;
     }
-    // for (var i = 0; i < letters.length; i++) {
 
-    //     // Inside the loop...
+    function buildNavbar(){
+        $("#mainContainer").append($("<div>").addClass("navbar-fixed").attr("id", "nav-bar"));
+        $("#nav-bar").append($("<div>").addClass("cinnabar").attr("id", "cinna-bar"));
+        $("#cinna-bar").append($("<div>").addClass("container").attr("id", "nav-container"));
+        $("#nav-container").append($("<div>").addClass("nav-wrapper").attr("id", "navWrapper"));
+        $("#navWrapper").append($("<a>").addClass("brand-logo").attr("href", "#").html("Movie and Dinner Night"));
+        $("#navWrapper").append($("<a>").addClasss("sidenav-trigger").attr("href", "#").attr("id", "side-nav-trigger"));
+        $("#side-nav-trigger").append($("<i>").addClass("material-icons").html("menu"));
 
-    //     // 2. Create a variable named "letterBtn" equal to $("<button>");
-    //     var letterBtn = $("<button>");
-
-    //     // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
-    //     letterBtn.addClass("letter-button letter letter-button-color");
-
-    //     // 4. Then give each "letterBtn" a data-attribute called "data-letter".
-    //     letterBtn.attr("data-letter", letters[i]);
-
-    //     // 5. Then give each "letterBtns" a text equal to "letters[i]".
-    //     letterBtn.text(letters[i]);
-
-    //     // 6. Finally, append each "letterBtn" to the "#buttons" div (provided).
-    //     $("#buttons").append(letterBtn);
-
-    //   }
-
-
-    //     <table>
-    //     <tr>
-    //       <td>Alfreds Futterkiste</td>
-    //       <td>Maria Anders</td>
-    //     </tr>
-    //     <tr>
-    //       <td>Centro comercial Moctezuma</td>
-    //       <td>Francisco Chang</td>
-    //     </tr>
-    //     <tr>
-    //       <td>Ernst Handel</td>
-    //       <td>Roland Mendel</td>
-    //     </tr>
-    //     <tr>
-    //       <td>Island Trading</td>
-    //       <td>Helen Bennett</td>
-    //     </tr>
-    //     <tr>
-    //       <td>Laughing Bacchus Winecellars</td>
-    //       <td>Yoshi Tannamuri</td>
-    //     </tr>
-    //     <tr>
-    //       <td>Magazzini Alimentari Riuniti</td>
-    //       <td>Giovanni Rovelli</td>
-    //     </tr>
-    //   </table>
-
-
-
+    }
 
     function buildMovieTimesDisplayPage() {
         //build 1st row
