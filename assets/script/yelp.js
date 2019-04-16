@@ -762,10 +762,12 @@ function startSearch() {
       var imgURL = respData.image_url;
 
       // Creating an element to hold the still image
-      var image = $("<img>").attr("src", imgURL).attr("width", "200px");
+      var image = "<img src='"+imgURL+"' width=200px>"
+      
+      // $("<img>").attr("src", imgURL).attr("width", "200px");
 
       // Appending the image
-      restCard.append(image);
+      // restCard.append(image);
 
       // Pulling and adding business data
       var busName = respData.name;
@@ -781,7 +783,7 @@ function startSearch() {
         return addString;
       }
 
-      var nameField = $("<p class='rated'>").html(busName +  busAddr);
+      var nameField = busName +  busAddr;
       // Storing the rating data
       var rating = respData.rating;
 
@@ -790,10 +792,14 @@ function startSearch() {
       starUrl = "../images/yelp_stars/" + rateImg;
 
       // Creating an element to have the rating displayed
-      var pRating = $("<p class='rated'>").html("<img src='" + starUrl + "'>");
+      var pRating = "<img src='" + starUrl + "'>"
+      
+      //$("<p class='rated'>").html("<img src='" + starUrl + "'>");
 
+      var linkedBlock = '<a href="' + restLink + '">' + image +'<br/>'+ nameField +'<br/>'+ pRating + '</a>'
       // Displaying the name and rating
-      restCard.append('<a href="' + restLink + '"></a>').append(nameField).append(pRating);
+      restCard.append(linkedBlock);
+      //.append(nameField).append(pRating);
 
       // Adding restaurants to the display
       $("#restaurants").append(restCard);
