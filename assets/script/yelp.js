@@ -723,12 +723,12 @@ function startSearch() {
     }
   };
 
-  $("#searchButton").on("click", function (event) {
-    event.preventDefault();
-    // This line grabs the input from the textbox
-    restType = $("#searchInput").val().trim();
+  // $("#searchButton").on("click", function (event) {
+  //   event.preventDefault();
+  //   // This line grabs the input from the textbox
+  //   restType = $("#searchInput").val().trim();
     searchYelp(res);
-  });
+  // });
 
 
   function searchYelp(res) {
@@ -755,7 +755,7 @@ function startSearch() {
         var respData = results[idx]
         var restLink = respData.url;
         // Creating a div to hold the restaurant info
-        var restCard = $("<div class='cards'>");
+        var restCard = $("<div class='card text-white bg-dark mb-3'>");
 
 
         // Retrieving the URL for the image
@@ -786,7 +786,7 @@ function startSearch() {
         var rating = respData.rating;
 
         rateImg = starRtg(rating);
-        starUrl = "../images/yelp_stars/" + rateImg;
+        starUrl = "assets/images/yelp_stars/" + rateImg;
 
         // Creating an element to have the rating displayed
         var pRating = "<img src='" + starUrl + "'>"
