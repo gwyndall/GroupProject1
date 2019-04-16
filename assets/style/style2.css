@@ -7,10 +7,6 @@ body {
     background-size: 100%;
 }
 
-.container {
-    color: #5f1315;
-}
-
 .featured-text { 
     border: none !important;
 }
@@ -39,4 +35,22 @@ body,html{
 
 .card-header img {
     border-radius: 10px;
+}
+
+.brand-logo,h3 {
+    font-family: 'Vast Shadow', cursive;
+    font-weight: 500;
+    font-size: 2em;
+  }
+
+p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        font-size: 1em;
+}
+
+.card-title {
+    font-family: 'Vast Shadow', cursive;
+    font-weight: 500;
+    font-size: 2em;
 }
