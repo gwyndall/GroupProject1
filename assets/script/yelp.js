@@ -778,7 +778,7 @@ function startSearch() {
           }
           return addString;
         }
-
+        var price = respData.price;
         var nameField = busName + busAddr;
         
         
@@ -792,7 +792,7 @@ function startSearch() {
         var pRating = "<img src='" + starUrl + "'>"
 
         // Displaying the name and rating
-        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + '</a>'
+        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating  + '<br/>' +price+ '</a>'
         restCard.append(linkedBlock);
 
         // Adding restaurants to the display
