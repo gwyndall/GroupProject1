@@ -1,11 +1,17 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #fff !important;
+    background-image: url(../images/popcorn-1433327.jpg);
     width: 100% !important;
     height: 100% !important;
+    background-size: 100%;
 }
-/*
-.featured-text {
+
+.container {
+    color: #5f1315;
+}
+
+.featured-text { 
     border: none !important;
 }
 
@@ -13,25 +19,20 @@ html,
 body,
 .login-box {
   height: 100%;
-  background: #e74c3c;
 }
 
-.card{
-    background: #e74c3c;
-}
 
 body,html{
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #e74c3c;
     }
 
 .border {
     border: 1px solid black;
 }
-*/
+
 .card-header {
     text-align: center !important;
 }
