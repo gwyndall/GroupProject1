@@ -10,7 +10,8 @@ $(document).ready(function () {
         queryURL: "",
         foundMovie: null,
         theaters: null,
-        youtubeApi: "https://www.googleapis.com/youtube/v3/videos?key=[YOUR API KEY HERE]&fields=items(snippet(title,tags,channelTitle,publishedAt),statistics(viewCount))&part=snippet,statistics&id=[VIDEOID]"
+        youtubeApi: "https://www.googleapis.com/youtube/v3/search",
+        youTubeAPIkey: "AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M"
     }
 
     let movieData = {
@@ -45,7 +46,6 @@ $(document).ready(function () {
                     newTheater = {theaterName: showTime.theatre.name, showTimes: []}
                     theaters.push(newTheater) //= { showTimes: [] }
                 }else{
-
                     console.log("exists: " + showTime.theatre.name);
                 }
             }
@@ -59,7 +59,7 @@ $(document).ready(function () {
     main();
     function main() {
         $("body").append($("<div>").addClass("container h-100 scrollspy").attr("id", "mainContainer"));
-        buildNavbar();
+        // buildNavbar();
         buildMoviePage();
 
     }
@@ -83,6 +83,7 @@ $(document).ready(function () {
         //makeAPICall();
         buildMovieData(responseObject.responseResult);
         createTheaers();
+        youTubeSearch(movieAndDinnerObject.movieName);
     });
     //location stuff
     function getLocation() {
@@ -145,11 +146,40 @@ $(document).ready(function () {
         // createTable(movieData.theaters[0].showTimes);
 
         $("#theaterBlock2").append($("<h4>").addClass("text-white").html(movieData.theaters[1].theaterName));
-        $("#theaterBlock2").append(createTable(movieData.theaters[1].showTimes));
+        $("#theaterBlock2").append(createTable(movieData.theaters[1].showTimes).addClass("text-white"));
 
         $("#theaterBlock3").append($("<h4>").addClass("text-white").html(movieData.theaters[2].theaterName));
-        $("#theaterBlock3").append(createTable(movieData.theaters[2].showTimes));
+        $("#theaterBlock3").append(createTable(movieData.theaters[2].showTimes).addClass("text-white"));
 
+    }
+
+    function youTubeSearch(queryValue){
+        $.get(
+            movieAndDinnerObject.youtubeApi,{
+                part: "snippet, id",
+                q: queryValue,
+                type: "video",
+                key: movieAndDinnerObject.youTubeAPIkey
+            },
+            function(data){
+                // Log data
+            console.log(data);
+
+            const item = data.items[0];
+
+            // Get Output
+            var output = getOutput(item);
+            $("#youtube-trailer").append(output);
+            }
+        )
+    }
+
+    function getOutput(item){
+        var videoID = item.id.VideoId;
+        var thumb = item.snippet.thumbnails.high.url;
+        //build output string
+        var output = '<iframe auto src="https://youtube.com/embed/' + videoID + '?rel=0"></iframe>' + '<div class="clearfix"></div>' + '';
+        return output;
     }
 
     function createTable(arr){
@@ -169,10 +199,11 @@ $(document).ready(function () {
     }
 
     function createEachButton(element, index){
-        var showtimeBtn = $("<a>");
+        var showtimeBtn = $("<button>");
         
-        showtimeBtn.attr("id", "time"+index).attr("href", element.fandangoLink);
-        showtimeBtn.html(moment(element.time).format("hh:mm a"));
+        // showtimeBtn.attr("id", "time"+index).attr("href", element.fandangoLink).addClass("movieTimeButton");
+        showtimeBtn.attr("id", "time"+index).addClass("movieTimeButton btn-sm");
+        showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink));
         return showtimeBtn;
     }
 
@@ -182,7 +213,7 @@ $(document).ready(function () {
         $("#cinna-bar").append($("<div>").addClass("container").attr("id", "nav-container"));
         $("#nav-container").append($("<div>").addClass("nav-wrapper").attr("id", "navWrapper"));
         $("#navWrapper").append($("<a>").addClass("brand-logo").attr("href", "#").html("Movie and Dinner Night"));
-        $("#navWrapper").append($("<a>").addClasss("sidenav-trigger").attr("href", "#").attr("id", "side-nav-trigger"));
+        $("#navWrapper").append($("<a>").addClass("sidenav-trigger").attr("href", "#").attr("id", "side-nav-trigger"));
         $("#side-nav-trigger").append($("<i>").addClass("material-icons").html("menu"));
 
     }
@@ -193,9 +224,11 @@ $(document).ready(function () {
         $("#projects").append($("<container>").attr("id", "projectContainer"));
         $("#projectContainer").append($("<div>").addClass("row align-items-center no-gutters mb-4 mg-lg-5").attr("id", "row1"));
         $("#row1").append($("<div>").addClass("col-xl-8 col-lg-7").attr("id", "movieImage1"));
-        $("#movieImage1").append($("<img>").addClass("img-fluid mb-3 mb-lg-0").attr("src", "./assets/Images/bg-masthead.jpg"));
+        // $("#movieImage1").append($("<img>").addClass("img-fluid mb-3 mb-lg-0").attr("src", "./assets/Images/bg-masthead.jpg"));
+        $("#movieImage1").append($("<div>").addClass("embed-responsive embed-responsive-16by9").attr("id", "youtube-div"));
+        $("#youtube-div").append($("<ul>").attr("id", "youtube-trailer"));
         $("#row1").append($("<div>").addClass("col-xl-4 col-lg-5").attr("id", "movieText1"));
-        $("#movieText1").append($("<div>").addClass("featured-text text-center text-lg-left").attr("id", "theaterBlock1"));
+        $("#movieText1").append($("<div>").addClass("featured-text text-center").attr("id", "theaterBlock1"));
         // $("#theaterBlock1").append($("<h4>").html("Theater Name"));
         // $("#movieText1").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
 
@@ -204,7 +237,7 @@ $(document).ready(function () {
         $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieImage2"));
         $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
         $("#row2").append($("<div>").addClass("col-lg-6 bg-black text-center").attr("id", "movieText2"));
-        $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "theaterBlock2"))
+        $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center mb-0 text-white-50 theaterBlock").attr("id", "theaterBlock2"))
         // $("#theaterBlock2").append($("<h4>").addClass("text-white").html("Name of the movie"));
         // $("#theaterBlock2").append($("<p>").addClass("mb-0 text-white-50").html("Here we will elaborate more on the plot of the movie or anything else you like to add"));
         $("#theaterBlock2").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
