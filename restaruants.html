@@ -2,71 +2,91 @@
 <html>
 
 <head>
-    <title>Dinner and a Movie!</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-
-    <div class="navbar-fixed">
-        <nav class="cinnabar">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo center">Movie and Dinner Night</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger show-on-large">
-                        <i class="material-icons">menu</i>
-                    </a>
-
+    <div class="container">
+        <div class="row">
+            <div class="navbar-fixed">
+                    <nav class="cinnabar">
+                        <div class="container">
+                            <div class="nav-wrapper">
+                                <a href="#" class="brand-logo center">Movie and Dinner Night</a>
+                                <a href="#" data-target="mobile-nav" class="sidenav-trigger show-on-large">
+                                    <i class="material-icons">menu</i>
+                                </a>
+            
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><!-- end row-->
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a href="#movie">Movie</a>
+            </li>
+            <li>
+                <a href="#restaurants">Restaurants</a>
+            </li>
+            <li>
+                <a href="#location">Change location</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-md-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/u966xtB4eP2gvtznHs3ydw/ls.jpg"></div>
+                <div class="card-body">
+                <h5 class="card-title">Name</h5>
+                <p class="card-text">Address</p>
+                <p class="card-text">Stars</p>
+                <p class="card-text">$$$</p>
                 </div>
             </div>
-        </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-        <li>
-            <a href="#movie">Movie</a>
-        </li>
-        <li>
-            <a href="#restaurants">Restaurants</a>
-        </li>
-        <li>
-            <a href="#location">Change location</a>
-        </li>
-    </ul>
-    <div id="container">
-
-        <header id="restHeader">
-            Select a Restaurant
-        </header>
-
-        <div id="movieInfo"></div>
-
-        <table id="restTable" style="width:80%">
-            <tr id="restHeader">
-                <th id="restName">Restaurant Name</th>
-                <th id="restRating">Rating</th>
-                <th id="restPrice">Price</th>
-                <th id="restAddress">Address</th>
-            </tr>
-            <tr id="restRows">
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-
+            </div> 
+            <div class="col-md-6">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/u966xtB4eP2gvtznHs3ydw/ls.jpg"></div>
+                    <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Address</p>
+                    <p class="card-text">Stars</p>
+                    <p class="card-text">$$$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/u966xtB4eP2gvtznHs3ydw/ls.jpg"></div>
+                    <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Address</p>
+                    <p class="card-text">Stars</p>
+                    <p class="card-text">$$$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-header"><img src="https://s3-media2.fl.yelpcdn.com/bphoto/u966xtB4eP2gvtznHs3ydw/ls.jpg"></div>
+                    <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Address</p>
+                    <p class="card-text">Stars</p>
+                    <p class="card-text">$$$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -1,7 +1,10 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #fff !important;
+    width: 100% !important;
+    height: 100% !important;
 }
-
+/*
 .featured-text {
     border: none !important;
 }
@@ -25,3 +28,14 @@ body,html{
     background: #e74c3c;
     }
 
+.border {
+    border: 1px solid black;
+}
+*/
+.card-header {
+    text-align: center !important;
+}
+
+.card-header img {
+    border-radius: 10px;
+}
