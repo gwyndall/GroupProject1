@@ -727,29 +727,32 @@ function startSearch() {
   //   event.preventDefault();
   //   // This line grabs the input from the textbox
   //   restType = $("#searchInput").val().trim();
-    searchYelp(res);
+  searchYelp(res);
   // });
 
 
   function searchYelp(res) {
-    var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx"
-   
+    // var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx"
+
     //Alternative api key
     // var apiKey = "96j_fC5l32z1FaYSk8NQMukWB7BJfAL8TOjl0fylLlap3y7SOAGGuLeeNhekRn_4Gocz9oSVdMBja866dd62uppQhNvoFzmbx1rObNRykqSjIB3sdn1zolKshTGyXHYx"
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + restType + "&latitude=" + lat + "&longitude=" + long;
+    // var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + restType + "&latitude=" + lat + "&longitude=" + long;
 
 
-    $.ajax({
-      url: queryURL,
-      method: "GET",
-      headers: {
-        "accept": "application/json",
-        "x-requested-with": "xmlhttprequest",
-        "Access-Control-Allow-Origin": "*",
-        "Authorization": `Bearer ${apiKey}`
-      }
-    }).then(function (res) {
+    // $.ajax({
+    //   url: queryURL,
+    //   method: "GET",
+    //   headers: {
+    //     "accept": "application/json",
+    //     "x-requested-with": "xmlhttprequest",
+    //     "Access-Control-Allow-Origin": "*",
+    //     "Authorization": `Bearer ${apiKey}`
+    //   }
+    // }).then(function (res) {
+
+      // var results = res.businesses
       var results = res.businesses
+
       console.log(res);
       for (let idx = 0; idx < results.length; idx++) {
         var respData = results[idx]
@@ -766,22 +769,22 @@ function startSearch() {
 
 
         // Pulling and adding business data
-        var busName = respData.name;
-        var busAddr = addr(respData.location.display_address);
+        var busName = '<h5 class="card-title">'+respData.name+'</h5>' ;
+        var busAddr = '<p>'+addr(respData.location.display_address)+'</p>';
 
         // Function to build address block
         function addr(array) {
           let addString = "";
           for (let index = 0; index < array.length; index++) {
             const element = array[index];
-            addString = addString + "<br/>" + element;
+            addString = addString + element + "<br/>";
           }
           return addString;
         }
         var price = respData.price;
         var nameField = busName + busAddr;
-        
-        
+
+
         // Storing the rating data
         var rating = respData.rating;
 
@@ -789,10 +792,10 @@ function startSearch() {
         starUrl = "assets/images/yelp_stars/" + rateImg;
 
         // Creating an element to have the rating displayed
-        var pRating = "<img src='" + starUrl + "'>"
+        var pRating = "<img class='star' src=" + starUrl + ">";
 
         // Displaying the name and rating
-        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating  + '<br/>' +price+ '</a>'
+        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + '<br/>' + price + '</a>'
         restCard.append(linkedBlock);
 
         // Adding restaurants to the display
@@ -837,8 +840,10 @@ function startSearch() {
           return rateImgFile;
         }
       }
-    });
-
-
+        
   }
+  // );
+
+
+//   }
 }
