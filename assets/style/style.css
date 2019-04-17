@@ -6,6 +6,11 @@
         padding: 0;
         background: #e74c3c;
         }
+
+    /* body {
+          background-image: url(../images/popcorn-1433327.jpg);
+          background-size: 100%;
+      } */
     
         .searchbar{
         margin-bottom: auto;
@@ -89,5 +94,5 @@
           .brand-logo {
             font-family: 'Vast Shadow', cursive;
             font-weight: 500;
-            font-size: 2em;
+            font-size: 1em;
           }
