@@ -732,113 +732,113 @@ function startSearch() {
 
 
   function searchYelp(res) {
-    // var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx"
-    // // var apiKey = "96j_fC5l32z1FaYSk8NQMukWB7BJfAL8TOjl0fylLlap3y7SOAGGuLeeNhekRn_4Gocz9oSVdMBja866dd62uppQhNvoFzmbx1rObNRykqSjIB3sdn1zolKshTGyXHYx"
-    // var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term="+restType+"&latitude="+lat+"&longitude="+long;
+    var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx"
+   
+    //Alternative api key
+    // var apiKey = "96j_fC5l32z1FaYSk8NQMukWB7BJfAL8TOjl0fylLlap3y7SOAGGuLeeNhekRn_4Gocz9oSVdMBja866dd62uppQhNvoFzmbx1rObNRykqSjIB3sdn1zolKshTGyXHYx"
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + restType + "&latitude=" + lat + "&longitude=" + long;
 
 
-    // $.ajax({
-    //   url: queryURL,
-    //   method: "GET",
-    //   headers: {
-    //     "accept": "application/json",
-    //     "x-requested-with": "xmlhttprequest",
-    //     "Access-Control-Allow-Origin": "*",
-    //     "Authorization": `Bearer ${apiKey}`
-    //   }
-    // }).then(
-
-    // function (res) {
-    var results = res.businesses
-    console.log(res);
-    for (let idx = 0; idx < results.length; idx++) {
-      var respData = results[idx]
-      var restLink = respData.url;
-      // Creating a div to hold the restaurant info
-      var restCard = $("<div class='cards'>");
-
-      
-      // Retrieving the URL for the image
-      var imgURL = respData.image_url;
-
-      // Creating an element to hold the still image
-      var image = $("<img>").attr("src", imgURL).attr("width", "200px");
-
-      // Appending the image
-      restCard.append(image);
-
-      // Pulling and adding business data
-      var busName = respData.name;
-      var busAddr = addr(respData.location.display_address);
-
-      // Function to build address block
-      function addr(array) {
-        let addString = "";
-        for (let index = 0; index < array.length; index++) {
-          const element = array[index];
-          addString = addString + "<br/>" + element ;
-        }
-        return addString;
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+      headers: {
+        "accept": "application/json",
+        "x-requested-with": "xmlhttprequest",
+        "Access-Control-Allow-Origin": "*",
+        "Authorization": `Bearer ${apiKey}`
       }
+    }).then(function (res) {
+      var results = res.businesses
+      console.log(res);
+      for (let idx = 0; idx < results.length; idx++) {
+        var respData = results[idx]
+        var restLink = respData.url;
+        // Creating a div to hold the restaurant info
+        var restCard = $("<div class='cards'>");
 
-      var nameField = $("<p class='rated'>").html(busName +  busAddr);
-      // Storing the rating data
-      var rating = respData.rating;
+
+        // Retrieving the URL for the image
+        var imgURL = respData.image_url;
+
+        // Creating an element to hold the still image
+        var image = "<img src='" + imgURL + "' width=200px>"
 
 
-      rateImg = starRtg(rating);
-      starUrl = "../images/yelp_stars/" + rateImg;
+        // Pulling and adding business data
+        var busName = respData.name;
+        var busAddr = addr(respData.location.display_address);
 
-      // Creating an element to have the rating displayed
-      var pRating = $("<p class='rated'>").html("<img src='" + starUrl + "'>");
-
-      // Displaying the name and rating
-      restCard.append('<a href="' + restLink + '"></a>').append(nameField).append(pRating);
-
-      // Adding restaurants to the display
-      $("#restaurants").append(restCard);
-
-      // Get Rating Image
-      function starRtg(rating) {
-        //just trying a couple lines to see if I can get it to work
-        let rateImgFile = ""
-
-        switch (rating) {
-          case 1:
-            rateImgFile = "small_1.png";
-            break;
-          case 1.5:
-            rateImgFile = "small_1_half.png";
-            break;
-          case 2:
-            rateImgFile = "small_2.png";
-            break;
-          case 2.5:
-            rateImgFile = "small_2_half.png";
-            break;
-          case 3:
-            rateImgFile = "small_3.png";
-            break;
-          case 3.5:
-            rateImgFile = "small_3_half.png";
-            break;
-          case 4:
-            rateImgFile = "small_4.png";
-            break;
-          case 4.5:
-            rateImgFile = "small_4_half.png";
-            break;
-          case 5:
-            rateImgFile = "small_5.png";
-            break;
-          default:
-            rateImgFile = "small_0.png";
+        // Function to build address block
+        function addr(array) {
+          let addString = "";
+          for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            addString = addString + "<br/>" + element;
+          }
+          return addString;
         }
-        return rateImgFile;
+        var price = respData.price;
+        var nameField = busName + busAddr;
+        
+        
+        // Storing the rating data
+        var rating = respData.rating;
+
+        rateImg = starRtg(rating);
+        starUrl = "../images/yelp_stars/" + rateImg;
+
+        // Creating an element to have the rating displayed
+        var pRating = "<img src='" + starUrl + "'>"
+
+        // Displaying the name and rating
+        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating  + '<br/>' +price+ '</a>'
+        restCard.append(linkedBlock);
+
+        // Adding restaurants to the display
+        $("#restaurants").append(restCard);
+
+        // Get Rating Image
+        function starRtg(rating) {
+          //just trying a couple lines to see if I can get it to work
+          let rateImgFile = ""
+
+          switch (rating) {
+            case 1:
+              rateImgFile = "small_1.png";
+              break;
+            case 1.5:
+              rateImgFile = "small_1_half.png";
+              break;
+            case 2:
+              rateImgFile = "small_2.png";
+              break;
+            case 2.5:
+              rateImgFile = "small_2_half.png";
+              break;
+            case 3:
+              rateImgFile = "small_3.png";
+              break;
+            case 3.5:
+              rateImgFile = "small_3_half.png";
+              break;
+            case 4:
+              rateImgFile = "small_4.png";
+              break;
+            case 4.5:
+              rateImgFile = "small_4_half.png";
+              break;
+            case 5:
+              rateImgFile = "small_5.png";
+              break;
+            default:
+              rateImgFile = "small_0.png";
+          }
+          return rateImgFile;
+        }
       }
-    }
+    });
+
+
   }
-  // );
-
-
 }
