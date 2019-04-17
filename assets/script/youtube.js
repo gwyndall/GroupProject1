@@ -41,8 +41,6 @@ function search() {
             // display results
             $('#results').append(output);
         });
-
-
 };
 
 // Build output

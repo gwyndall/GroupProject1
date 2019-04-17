@@ -11,6 +11,9 @@
           background-image: url(../images/popcorn-1433327.jpg);
           background-size: 100%;
           background-blend-mode: overlay;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
 
       }
     
