@@ -5,12 +5,14 @@
         margin: 0;
         padding: 0;
         background: #e74c3c;
-        }
+              }
 
-    /* body {
+    body {
           background-image: url(../images/popcorn-1433327.jpg);
           background-size: 100%;
-      } */
+          background-blend-mode: overlay;
+
+      }
     
         .searchbar{
         margin-bottom: auto;
@@ -65,6 +67,7 @@
           .bg-black {
             background-color: #161616 !important;
           }
+          
 
           .projects-section .project-text {
             padding: 3rem;
@@ -94,5 +97,22 @@
           #brand-logo {
             font-family: 'Vast Shadow', cursive;
             font-weight: 500;
-            font-size: 1em;
+            font-size: 2em;
           }
+
+          .nav-link { 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+
+          }
+.entry-text {
+  text-align: center;
+  margin-top: 150px;
+
+}
+
+.searchBar {
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
