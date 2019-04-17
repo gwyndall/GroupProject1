@@ -109,13 +109,23 @@
             font-size: 1em;
 
           }
-.entry-text {
+     
+
+.entry-text p {
   text-align: center;
   margin-top: 150px;
-
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 10px;
+  font-size: 1.5em;
 }
+
 
 .searchBar {
   margin-top: 20px!important;
   margin-bottom: 20px!important;
+}
+
+.h-100 {
+  height: 200px!important;
 }
