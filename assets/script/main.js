@@ -141,8 +141,8 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log("this is the response"+response);
             
-            // buildMovieData(response);
-            // createTheaers();
+            buildMovieData(response);
+            createTheaers();
         }).fail(function (error){
             console.log("error: "+ error);
             
