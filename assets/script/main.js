@@ -83,7 +83,8 @@ $(document).ready(function () {
         //makeAPICall();
         buildMovieData(responseObject.responseResult);
         createTheaers();
-        youTubeSearch(movieAndDinnerObject.movieName);
+        youTubeSearch(movieAndDinnerObject.movieName + "trailer");
+        imageSearch(movieAndDinnerObject.movieName);
     });
     //location stuff
     function getLocation() {
@@ -128,7 +129,7 @@ $(document).ready(function () {
             url: movieAndDinnerObject.queryURL,
             method: "GET"
         }).then(function (response) {
-            displayMovieTimes(response);
+            buildMovieData(response);
         });
     }
     function createUrl() {
@@ -168,18 +169,48 @@ $(document).ready(function () {
             const item = data.items[0];
 
             // Get Output
-            var output = getOutput(item);
+            var output = getVideoLink(item);
             $("#youtube-trailer").append(output);
             }
         )
     }
 
-    function getOutput(item){
-        var videoID = item.id.VideoId;
+    function imageSearch(queryValue) {
+        // run get request on API
+        $.get(
+            "https://www.googleapis.com/customsearch/v1", {
+                // part: 'snippet, id',
+                q: queryValue,
+                cx: "007612904269435061873:ms7wk6lvmbu",
+                searchType: "image",
+                imgSize: "large",
+                key: "AIzaSyBqHjcGWJ84tqj-6-7mY_J_nH1jpBje9qQ"
+            },
+            function (data) {
+    
+                // Log data
+                console.log(data);
+    
+                const imageLink = data.items[0].link;
+                $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", data.items[0].link));
+                $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", data.items[2].link));
+
+            });
+    
+    
+    };
+
+    function getVideoLink(item){
+        var videoID = item.id.videoId;
         var thumb = item.snippet.thumbnails.high.url;
         //build output string
         var output = '<iframe auto src="https://youtube.com/embed/' + videoID + '?rel=0"></iframe>' + '<div class="clearfix"></div>' + '';
         return output;
+    }
+
+    function getImageLink(item){
+        var imageId = item.link;
+
     }
 
     function createTable(arr){
@@ -235,7 +266,7 @@ $(document).ready(function () {
         //build 2nd row
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row2"))
         $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieImage2"));
-        $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
+        // $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
         $("#row2").append($("<div>").addClass("col-lg-6 bg-black text-center").attr("id", "movieText2"));
         $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center mb-0 text-white-50 theaterBlock").attr("id", "theaterBlock2"))
         // $("#theaterBlock2").append($("<h4>").addClass("text-white").html("Name of the movie"));
@@ -244,7 +275,7 @@ $(document).ready(function () {
 
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row3"));
         $("#row3").append($("<div>").addClass("col-lg-6").attr("id", "movieImage3"));
-        $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-02.jpg"));
+        // $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-02.jpg"));
         $("#row3").append($("<div>").addClass("col-lg-6 order-lg-first bg-black text-center").attr("id", "movieText3"));
         $("#movieText3").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "theaterBlock3"));
         // $("#theaterBlock3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
