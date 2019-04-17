@@ -1,0 +1,9 @@
+#restaurants {
+    display: inline-flex;
+   flex-flow: wrap;
+}
+.cards {
+    padding: 20px;
+    margin: 20px auto;
+    
+ }
