@@ -33,7 +33,7 @@ $(document).ready(function () {
     }
 
     function buildMovieData(movies) {
-        let result = movies.find(movie => movie.title == movieAndDinnerObject.movieName);
+        let result = movies.find(movie => (removeSpecial(movie.title)).toLowerCase() == movieAndDinnerObject.movieName);
         
         movieData.movieName = result.title;
         let showTimes = result.showtimes;
@@ -54,6 +54,10 @@ $(document).ready(function () {
         console.log(movieData);
 
     }
+
+    function removeSpecial(s){
+        return s.replace(/[^a-z0-9]/ig,'');
+      }
 
 
     main();
@@ -80,9 +84,9 @@ $(document).ready(function () {
         destroyMoviePage();
         buildMovieTimesDisplayPage();
         getLocation();
-        //makeAPICall();
-        buildMovieData(responseObject.responseResult);
-        createTheaers();
+        makeAPICall();
+        // buildMovieData(responseObject.responseResult);
+        // createTheaers();
         youTubeSearch(movieAndDinnerObject.movieName + "trailer");
         imageSearch(movieAndDinnerObject.movieName);
     });
@@ -125,11 +129,19 @@ $(document).ready(function () {
         //function to create our URL for the api callß
         // createUrl(queryString);
         movieAndDinnerObject.queryURL = createUrl();
+        console.log(movieAndDinnerObject.queryURL);
+        
         $.ajax({
             url: movieAndDinnerObject.queryURL,
             method: "GET"
         }).then(function (response) {
-            buildMovieData(response);
+            console.log("this is the response"+response);
+            
+            // buildMovieData(response);
+            // createTheaers();
+        }).fail(function (error){
+            console.log("error: "+ error);
+            
         });
     }
     function createUrl() {
