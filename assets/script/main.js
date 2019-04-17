@@ -33,9 +33,11 @@ $(document).ready(function () {
     }
 
     function buildMovieData(movies) {
-        let result = movies.find(movie => (removeSpecial(movie.title)).toLowerCase() == movieAndDinnerObject.movieName);
+        // let result = movies.find(movie => (removeSpecial(movie.title)).toLowerCase() == movieAndDinnerObject.movieName);
+        let result = movies.find(movie => movie.title == movieAndDinnerObject.movieName);
         
         movieData.movieName = result.title;
+        $("#jumbotronText").html(movieData.movieName);
         let showTimes = result.showtimes;
         console.log(showTimes);
         var theaters = [];
@@ -61,9 +63,11 @@ $(document).ready(function () {
 
 
     main();
-    function main() {
+    function main() { 
+        buildNavbar();
+        $("body").append($("<div>").addClass("container").attr("id", "mainContainer2"));
+        createJumboTron();
         $("body").append($("<div>").addClass("container h-100 scrollspy").attr("id", "mainContainer"));
-        // buildNavbar();
         buildMoviePage();
 
     }
@@ -251,14 +255,24 @@ $(document).ready(function () {
     }
 
     function buildNavbar(){
-        $("#mainContainer").append($("<div>").addClass("navbar-fixed").attr("id", "nav-bar"));
-        $("#nav-bar").append($("<div>").addClass("cinnabar").attr("id", "cinna-bar"));
-        $("#cinna-bar").append($("<div>").addClass("container").attr("id", "nav-container"));
-        $("#nav-container").append($("<div>").addClass("nav-wrapper").attr("id", "navWrapper"));
-        $("#navWrapper").append($("<a>").addClass("brand-logo").attr("href", "#").html("Movie and Dinner Night"));
-        $("#navWrapper").append($("<a>").addClass("sidenav-trigger").attr("href", "#").attr("id", "side-nav-trigger"));
-        $("#side-nav-trigger").append($("<i>").addClass("material-icons").html("menu"));
+        $("body").append($("<div>").addClass("navbar navbar-dark bg-dark").attr("id", "nav-bar"));
+        $("#nav-bar").append($("<a>").addClass("navbar-brand").attr("id", "brand-logo").attr("href", "#").html("Movie and Dinner Night"));
+        $("#nav-bar").append($("<button>").addClass("navbar-toggler").attr({type: "button", 'data-toggle': "collapse", 'data-target':"#navbarNav", 'aria-controls': "navbarNav", 'aria-expanded' : "false", 'aria-label' : "Toggle navigation", id: "nav-bar-button"}));
+        $("#nav-bar-button").append($("<span>").addClass("navbar-toggler-icon"))
+        $("#nav-bar").append($("<div>").addClass("collapse navbar-collapse").attr("id", "navbarNav"));
+        $("#navbarNav").append($("<ul>").addClass("navbar-nav").attr("id", "navbarNav-ul"));
+        $("#navbarNav-ul").append($("<li>").addClass("nav-item").attr("id", "movie-li"))
+        $("#movie-li").append($("<a>").addClass("nav-link").attr("href", "#").html("Movie")).append($("<span>").addClass("sr-only").html("(current)"));
+        $("#navbarNav-ul").append($("<li>").addClass("nav-item").attr("id", "restaurant-li"))
+        $("#restaurant-li").append($("<a>").addClass("nav-link").attr("href", "#").html("Restaurants"));
+        $("#navbarNav-ul").append($("<li>").addClass("nav-item").attr("id", "location-li"))
+        $("#location-li").append($("<a>").addClass("nav-link").attr("href", "#").html("Change Location"));
+    }
 
+    function createJumboTron(){
+        // $("#mainContainer2").append($("<div>").addClass("container").attr("id", "entry-text-container"));
+        $("#mainContainer2").append($("<div>").addClass("entry-text").attr("id", "entry-text-container"))
+        $("#entry-text-container").append($("<p>").html("Hover over the Search Dot to start your movie and Dinner Night!").attr("id","jumbotronText"));
     }
 
     function buildMovieTimesDisplayPage() {
@@ -293,6 +307,8 @@ $(document).ready(function () {
         // $("#theaterBlock3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
         // $("#theaterBlock3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
         $("#theaterBlock3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
+
+
     }
 
     // todo: ---------------DELETE --------------------
