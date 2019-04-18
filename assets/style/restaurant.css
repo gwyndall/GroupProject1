@@ -60,11 +60,11 @@ img.star {
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
 }
 
-.card-title {
+h5.card-title {
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-weight: 800;
