@@ -1,7 +1,7 @@
 // Original code from https://codepen.io/timivey/pen/jEXxZY/
 // I need to get cx for image query from https://cse.google.com/all
 
-var gapikey = 'AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M';
+var gapikey = 'AIzaSyBqHjcGWJ84tqj-6-7mY_J_nH1jpBje9qQ';
 
 
 // Search Box
@@ -18,15 +18,16 @@ function search() {
     // $('#buttons').html('');
 
     // get form input
-    q = $('#query').val() + "trailer"; // this probably shouldn't be created as a global
+    q = $('#query').val(); // this probably shouldn't be created as a global
 
     // run get request on API
     $.get(
         "https://www.googleapis.com/customsearch/v1", {
-            part: 'snippet, id',
+            // part: 'snippet, id',
             q: q,
-            type: 'image',
-            imgSize: "medium",
+            cx: "007612904269435061873:ms7wk6lvmbu",
+            searchType: "image",
+            imgSize: "large",
             key: gapikey
         },
         function (data) {
@@ -48,8 +49,8 @@ function search() {
 
 // Build output
 function getOutput(item) {
-    var videoID = item.id.videoId;
-    var thumb = item.snippet.thumbnails.high.url;
+    var videoID = item.link;
+    // var thumb = item.snippet.thumbnails.high.url;
 
 
     // Build output string

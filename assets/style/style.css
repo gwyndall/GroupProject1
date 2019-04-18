@@ -1,125 +1,130 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #e74c3c;
+}
 
-    body,html{
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: #e74c3c;
-              }
+body {
+  background-image: url(../images/popcorn-1433327.jpg);
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 
-    body {
-          background-image: url(../images/popcorn-1433327.jpg);
-          background-size: 100%;
-          background-blend-mode: overlay;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: center;
+.projects-section {
+  background: none !important;
+  background-color: transparent !important;
+}
 
-      }
-    
-        .searchbar{
-        margin-bottom: auto;
-        margin-top: auto;
-        height: 60px;
-        background-color: #353b48;
-        border-radius: 30px;
-        padding: 10px;
-        }
-    
-        .search_input{
-        color: white;
-        border: 0;
-        outline: 0;
-        background: none;
-        width: 0;
-        caret-color:transparent;
-        line-height: 40px;
-        transition: width 0.4s linear;
-        }
-    
-        .searchbar:hover > .search_input{
-        padding: 0 10px;
-        width: 450px;
-        caret-color:red;
-        transition: width 0.4s linear;
-        }
-    
-        .searchbar:hover > .search_icon{
-        background: white;
-        color: #e74c3c;
-        }
-    
-        .search_icon{
-        height: 40px;
-        width: 40px;
-        float: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        color:white;
-        }
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
 
-        .featured-text {
-            padding: 2rem;
-            padding: 0 0 0 2rem;
-            border-left: 0.5rem solid;
-            border-color: aqua;
-          }
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
 
-          .bg-black {
-            background-color: #161616 !important;
-          }
-          
+.searchbar:hover>.search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: red;
+  transition: width 0.4s linear;
+}
 
-          .projects-section .project-text {
-            padding: 3rem;
-            font-size: 90%;
-          }
+.searchbar:hover>.search_icon {
+  background: white;
+  color: #e74c3c;
+}
 
-          .projects-section {
-            padding: 10rem 0;
-          }
-          
-          .projects-section .featured-text {
-            padding: 2rem;
-          }
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
 
-          p {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 1em;
-          }
+.featured-text {
+  padding: 2rem;
+  padding: 0 0 0 2rem;
+  border-left: 0.5rem solid;
+  border-color: aqua;
+}
 
-          h4 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 800;
-            font-size: 2em;
-          }
+.bg-black {
+  background-color: #161616 !important;
+}
 
-          #brand-logo {
-            font-family: 'Vast Shadow', cursive;
-            font-weight: 500;
-            font-size: 2em;
-          }
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
 
-          .nav-link { 
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 1em;
+.projects-section {
+  padding: 10rem 0;
+}
 
-          }
-     
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12em;
+}
+
+#brand-logo {
+  font-family: 'Vast Shadow', cursive;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
 
 .entry-text p {
   text-align: center;
   margin-top: 150px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.6); 
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   font-size: 1.5em;
 }
-
 
 .searchBar {
   margin-top: 20px!important;
@@ -128,4 +133,46 @@
 
 .h-100 {
   height: 200px!important;
+}
+
+.card {
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+  display: inline-flex;
+  flex-flow: wrap;
+}
+
+.card img {
+  max-width: 100% !important;
+  max-height: 300px;
+  margin: 0px auto 15px auto;
+  border-radius: 10px;
+}
+
+img.star {
+  width: 100px;
+  border-radius: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+#restaurants {
+  width: 100%;
+  margin: 70px auto;
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
