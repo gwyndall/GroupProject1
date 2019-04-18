@@ -16,6 +16,11 @@
           background-position: center;
 
       }
+
+      .projects-section{
+        background: none !important;
+        background-color: transparent  !important;
+      }
     
         .searchbar{
         margin-bottom: auto;
