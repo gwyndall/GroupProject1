@@ -13,6 +13,7 @@ $(document).ready(function () {
         youtubeApi: "https://www.googleapis.com/youtube/v3/search",
         youTubeAPIkey: "AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M"
     }
+    var database = firebase.database();
 
     let movieData = {
         movieName: "",
@@ -52,7 +53,8 @@ $(document).ready(function () {
         })
         movieData.theaters = theaters;
         console.log(movieData);
-
+        database.ref().push(movieData.movieName);
+        database.ref().push(result.showtimes);
     }
 
 
@@ -82,7 +84,7 @@ $(document).ready(function () {
         getLocation();
         //makeAPICall();
         buildMovieData(responseObject.responseResult);
-        createTheaers();
+        createTheaters();
         youTubeSearch(movieAndDinnerObject.movieName);
     });
     //location stuff
@@ -91,6 +93,7 @@ $(document).ready(function () {
             console.log("about to make a call to get zipcode dynamically");
             navigator.geolocation.getCurrentPosition(showPosition, showError);
             console.log("lattitude: " + movieAndDinnerObject.lat + " Longitude : " + movieAndDinnerObject.long);
+            database.ref().push("lattitude: " + movieAndDinnerObject.lat + " Longitude : " + movieAndDinnerObject.long);
         } else {
             console.log("Geolocation is not supported by this browser.");
         }
@@ -137,7 +140,7 @@ $(document).ready(function () {
         // http://data.tmsapi.com/v1.1/movies/showings?startDate=2019-04-10&lat=32.876709&lng=-117.206601&api_key=stp9q5rsr8afbrsfmmzvzubz
     }
 
-    function createTheaers(){
+    function createTheaters(){
         console.log("the time: "+ moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
         console.log(movieData.theaters[0].theaterName);
         
