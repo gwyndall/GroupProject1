@@ -41,7 +41,7 @@ $(document).ready(function () {
         movieData.movieName = result.title;
         $("#jumbotronText").html(movieData.movieName);
         let showTimes = result.showtimes;
-        console.log(showTimes);
+        // console.log(showTimes);
         var theaters = [];
 
         showTimes.forEach(function (showTime) {
@@ -55,7 +55,7 @@ $(document).ready(function () {
             }
         })
         movieData.theaters = theaters;
-        console.log(movieData);
+        // console.log(movieData);
         database.ref().push(movieData.movieName);
         database.ref().push(result.showtimes);
     }
@@ -92,13 +92,12 @@ $(document).ready(function () {
     $(document).on("click", "#addStuff", function () {
         event.preventDefault();
         movieAndDinnerObject.movieName = $("#user-movie-search").val().trim();
-        console.log("inside the click");
         destroyMoviePage();
         buildMovieTimesDisplayPage();
         getLocation();
         makeAPICall();
         // buildMovieData(responseObject.responseResult);
-        // createTheaers();
+        // createTheaters();
         youTubeSearch(movieAndDinnerObject.movieName + "trailer");
         imageSearch(movieAndDinnerObject.movieName);
     });
@@ -138,16 +137,14 @@ $(document).ready(function () {
     //make the api call for movie times
     function makeAPICall() {
         movieAndDinnerObject.queryURL = createUrl();
-        console.log(movieAndDinnerObject.queryURL);
+        // console.log(movieAndDinnerObject.queryURL);
 
         $.ajax({
             url: movieAndDinnerObject.queryURL,
             method: "GET"
         }).then(function (response) {
-            console.log("this is the response" + response);
-
             buildMovieData(response);
-            createTheaers();
+            createTheaters();
         }).fail(function (error) {
             console.log("error: " + error);
 
@@ -161,9 +158,6 @@ $(document).ready(function () {
     }
 
     function createTheaters(){
-        console.log("the time: "+ moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
-        console.log(movieData.theaters[0].theaterName);
-
         $("#theaterBlock1").append($("<h4>").html(movieData.theaters[0].theaterName));
         $("#theaterBlock1").append(createTable(movieData.theaters[0].showTimes));
         // createTable(movieData.theaters[0].showTimes);
@@ -185,11 +179,7 @@ $(document).ready(function () {
                 key: movieAndDinnerObject.youTubeAPIkey
             },
             function (data) {
-                // Log data
-                console.log(data);
-
                 const item = data.items[0];
-
                 // Get Output
                 var output = getVideoLink(item);
                 $("#youtube-trailer").append(output);
@@ -209,10 +199,6 @@ $(document).ready(function () {
                 key: "AIzaSyBqHjcGWJ84tqj-6-7mY_J_nH1jpBje9qQ"
             },
             function (data) {
-
-                // Log data
-                console.log(data);
-
                 const imageLink = data.items[0].link;
                 $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", data.items[0].link));
                 $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", data.items[2].link));
@@ -236,7 +222,6 @@ $(document).ready(function () {
         var newTable = $("<table>");
         newTable.addClass("table striped center bordered responsive-table").attr("id", "theaterInfo")
         for (let i = 0; i < arr.length; i++) {
-            console.log("i = " + i);
             if (i % 2 === 0) {
                 var newTR = $("<tr>").attr("id", "tr" + i);
             }
@@ -259,7 +244,6 @@ $(document).ready(function () {
     // OnClick for all the buttons
     $(document).on("click", ".movieTimeButton", function () {
         event.preventDefault();
-        console.log("yay you clicked a button");
         destroyMoviePage();
         searchYelp();
     });
@@ -292,31 +276,23 @@ $(document).ready(function () {
         $("#projects").append($("<container>").attr("id", "projectContainer"));
         $("#projectContainer").append($("<div>").addClass("row align-items-center no-gutters mb-4 mg-lg-5").attr("id", "row1"));
         $("#row1").append($("<div>").addClass("col-xl-8 col-lg-7").attr("id", "movieImage1"));
-        // $("#movieImage1").append($("<img>").addClass("img-fluid mb-3 mb-lg-0").attr("src", "./assets/Images/bg-masthead.jpg"));
         $("#movieImage1").append($("<div>").addClass("embed-responsive embed-responsive-16by9").attr("id", "youtube-div"));
         $("#youtube-div").append($("<ul>").attr("id", "youtube-trailer"));
         $("#row1").append($("<div>").addClass("col-xl-4 col-lg-5").attr("id", "movieText1"));
         $("#movieText1").append($("<div>").addClass("featured-text text-center").attr("id", "theaterBlock1"));
-        // $("#theaterBlock1").append($("<h4>").html("Theater Name"));
-        // $("#movieText1").append($("<p>").addClass("text-black-50 mb-0").html("This is where we can have all the different times for movie"));
 
         //build 2nd row
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row2"))
         $("#row2").append($("<div>").addClass("col-lg-6").attr("id", "movieImage2"));
-        // $("#movieImage2").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-01.jpg"));
         $("#row2").append($("<div>").addClass("col-lg-6 bg-black text-center").attr("id", "movieText2"));
         $("#movieText2").append($("<div>").addClass("project-text w-100 my-auto text-center mb-0 text-white-50 theaterBlock").attr("id", "theaterBlock2"))
-        // $("#theaterBlock2").append($("<h4>").addClass("text-white").html("Name of the movie"));
-        // $("#theaterBlock2").append($("<p>").addClass("mb-0 text-white-50").html("Here we will elaborate more on the plot of the movie or anything else you like to add"));
+
         $("#theaterBlock2").append($("<hr>").addClass("d-none d-lg-block mb-0 ml-0"));
 
         $("#projectContainer").append($("<div>").addClass("row justify-content-center no-gutters").attr("id", "row3"));
         $("#row3").append($("<div>").addClass("col-lg-6").attr("id", "movieImage3"));
-        // $("#movieImage3").append($("<img>").addClass("img-fluid").attr("src", "./assets/Images/demo-image-02.jpg"));
         $("#row3").append($("<div>").addClass("col-lg-6 order-lg-first bg-black text-center").attr("id", "movieText3"));
         $("#movieText3").append($("<div>").addClass("project-text w-100 my-auto text-center text-lg-left").attr("id", "theaterBlock3"));
-        // $("#theaterBlock3").append($("<h4>").addClass("text-white").html("Name of the Movie"));
-        // $("#theaterBlock3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
         $("#theaterBlock3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
     }
     //make API call for Yelp and populate the DOM with all the stuff
