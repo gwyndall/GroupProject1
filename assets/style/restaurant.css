@@ -1,9 +1,76 @@
-#restaurants {
-    display: inline-flex;
-   flex-flow: wrap;
+body {
+    width: 100%;
+    background-image: url('../images/popcorn-1433327.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
-.cards {
+
+.container-full {
+    width: 95%;
+    margin: auto;
+}
+
+.titlebar {
+    width: 100%;
+}
+.sidenav {
+    margin: 70px auto;
+}
+#restaurants {
+    width: 100%;
+    margin: 70px auto;
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration-color: red;
+    color: white;
+}
+.card {
+    width: 350px;
     padding: 20px;
-    margin: 20px auto;
-    
- }
+    margin: 20px;
+    display: inline-flex;
+    flex-flow: wrap;
+}
+
+.card img {
+    max-width: 100% !important;
+    width: 310px;
+    max-height: 300px;
+    margin: 0px auto 15px auto;
+    border-radius: 10px;
+
+}
+
+img.star {
+    width: 100px;
+    border-radius: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-title {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+img.ylogo {
+    width: 64px;
+}
