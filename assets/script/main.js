@@ -14,6 +14,8 @@ $(document).ready(function () {
         youTubeAPIkey: "AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M"
     }
 
+    database.ref().push(movieAndDinnerObject);
+
     let movieData = {
         movieName: "",
         theaters: []
