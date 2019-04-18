@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    //globla variables
-    //to do : put them in an object
+    //the object that holds almost all the global variables
     let movieAndDinnerObject = {
         movieName: "",
         lat: 32.876709,
@@ -15,12 +14,12 @@ $(document).ready(function () {
         youtubeApi: "https://www.googleapis.com/youtube/v3/search",
         youTubeAPIkey: "AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M"
     }
-
+    //Movie data that hold all the stuff for specific movie from the "response"
     let movieData = {
         movieName: "",
         theaters: []
     }
-
+    //checks if an element exists in arr, if it does then add movietime and the Fandago URL and return true
     function itExists(arr, element, arr2) {
         returnVal = false
         for (let i = 0; i < arr.length; i++) {
@@ -33,7 +32,7 @@ $(document).ready(function () {
         }
         return returnVal;
     }
-
+    //this is where we build our movieData object
     function buildMovieData(movies) {
         // let result = movies.find(movie => (removeSpecial(movie.title)).toLowerCase() == movieAndDinnerObject.movieName);
         let result = movies.find(movie => movie.title == movieAndDinnerObject.movieName);
@@ -58,13 +57,14 @@ $(document).ready(function () {
         console.log(movieData);
 
     }
-
+    //this removes special characters from a passed string
     function removeSpecial(s) {
         return s.replace(/[^a-z0-9]/ig, '');
     }
 
 
-    main();
+    main();//this function starts everything...
+    //main() calls navbar, jumbotron and the first page
     function main() {
         buildNavbar();
         $("body").append($("<div>").addClass("container").attr("id", "mainContainer2"));
@@ -73,6 +73,7 @@ $(document).ready(function () {
         buildMoviePage();
 
     }
+    //this function build the page with search input field and button
     function buildMoviePage() {
         $("#mainContainer").append($("<div>").addClass("d-flex justify-content-center h-100").attr("id", "secondContainer"));
         $("#secondContainer").append($("<div>").addClass("searchbar").attr("id", "searchBarDiv"));
@@ -80,10 +81,12 @@ $(document).ready(function () {
         $("#searchBarDiv").append($("<a>").addClass("search_icon").attr("id", "addStuff"));
         $("#addStuff").append($("<i>").addClass("fas fa-search"));
     }
+
+    //this function destroys everything that is in maincontainer
     function destroyMoviePage() {
         $("#mainContainer").empty();
     }
-
+    //onclick event for search movie button
     $(document).on("click", "#addStuff", function () {
         event.preventDefault();
         movieAndDinnerObject.movieName = $("#user-movie-search").val().trim();
@@ -107,11 +110,12 @@ $(document).ready(function () {
             console.log("Geolocation is not supported by this browser.");
         }
     }
+    //this function assigns lat and long to our global object
     function showPosition(position) {
         movieAndDinnerObject.lat = position.coords.latitude;
         movieAndDinnerObject.long = position.coords.longitude;
     }
-
+    //error code display function
     function showError(error) {
         switch (error.code) {
             case error.PERMISSION_DENIED:
@@ -128,13 +132,8 @@ $(document).ready(function () {
                 break;
         }
     }
-    //build the url for api call
+    //make the api call for movie times
     function makeAPICall() {
-        //need a url -- done
-        //make the call -- done
-        //save it in something 
-        //function to create our URL for the api callß
-        // createUrl(queryString);
         movieAndDinnerObject.queryURL = createUrl();
         console.log(movieAndDinnerObject.queryURL);
 
@@ -151,12 +150,13 @@ $(document).ready(function () {
 
         });
     }
+    //creates URL for movietime api
     function createUrl() {
         todaysDate = moment().format("YYYY-MM-DD");
         return movieAndDinnerObject.movieShowtimeUrl + todaysDate + "&lat=" + movieAndDinnerObject.lat + "&lng=" + movieAndDinnerObject.long + movieAndDinnerObject.movieShowtimeAPIKey
         // http://data.tmsapi.com/v1.1/movies/showings?startDate=2019-04-10&lat=32.876709&lng=-117.206601&api_key=stp9q5rsr8afbrsfmmzvzubz
     }
-
+    //creates theaters and adds showtimes to the table
     function createTheaers() {
         console.log("the time: " + moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
         console.log(movieData.theaters[0].theaterName);
@@ -172,7 +172,7 @@ $(document).ready(function () {
         $("#theaterBlock3").append(createTable(movieData.theaters[2].showTimes).addClass("text-white"));
 
     }
-
+    //call youtube search API
     function youTubeSearch(queryValue) {
         $.get(
             movieAndDinnerObject.youtubeApi, {
@@ -193,7 +193,7 @@ $(document).ready(function () {
             }
         )
     }
-
+    //call google custom search for images
     function imageSearch(queryValue) {
         // run get request on API
         $.get(
@@ -216,7 +216,7 @@ $(document).ready(function () {
 
             });
     };
-
+    //this is where we get the video link that is being populated in the movieResults DOM
     function getVideoLink(item) {
         var videoID = item.id.videoId;
         var thumb = item.snippet.thumbnails.high.url;
@@ -228,7 +228,7 @@ $(document).ready(function () {
     function getImageLink(item) {
         var imageId = item.link;
     }
-
+    //this is where I create a table that will be displayed in the DOM
     function createTable(arr) {
         var newTable = $("<table>");
         newTable.addClass("table striped center bordered responsive-table").attr("id", "theaterInfo")
@@ -244,7 +244,7 @@ $(document).ready(function () {
         // $("#theaterBlock1").append(newTable);
         return newTable;
     }
-
+    //this is where I create all the buttons for showtimes
     function createEachButton(element, index) {
         var showtimeBtn = $("<button>");
 
@@ -253,7 +253,7 @@ $(document).ready(function () {
         showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink));
         return showtimeBtn;
     }
-
+    // OnClick for all the buttons
     $(document).on("click", ".movieTimeButton", function () {
         event.preventDefault();
         console.log("yay you clicked a button");
@@ -261,7 +261,7 @@ $(document).ready(function () {
         searchYelp();
     });
 
-
+    //create the navbar
     function buildNavbar() {
         $("body").append($("<div>").addClass("navbar navbar-dark bg-dark").attr("id", "nav-bar"));
         $("#nav-bar").append($("<a>").addClass("navbar-brand").attr("id", "brand-logo").attr("href", "#").html("Movie and Dinner Night"));
@@ -276,13 +276,13 @@ $(document).ready(function () {
         $("#navbarNav-ul").append($("<li>").addClass("nav-item").attr("id", "location-li"))
         $("#location-li").append($("<a>").addClass("nav-link").attr("href", "#").html("Change Location"));
     }
-
+    //create the jumbotron (entry-text-banner)
     function createJumboTron() {
         // $("#mainContainer2").append($("<div>").addClass("container").attr("id", "entry-text-container"));
         $("#mainContainer2").append($("<div>").addClass("entry-text").attr("id", "entry-text-container"))
         $("#entry-text-container").append($("<p>").html("Hover over the Search Dot to start your movie and Dinner Night!").attr("id", "jumbotronText"));
     }
-
+    //create a movie times page
     function buildMovieTimesDisplayPage() {
         //build 1st row
         $("#mainContainer").append($("<section>").addClass("projects-section bg-light").attr("id", "projects"));
@@ -316,7 +316,7 @@ $(document).ready(function () {
         // $("#theaterBlock3").append($("<p>").addClass("mb-0 text-white-50").html("we will add some cast info or something here"));
         $("#theaterBlock3").append($("<hr>").addClass("d-none d-lg-block mb-0 mr-0"))
     }
-
+    //make API call for Yelp and populate the DOM with all the stuff
     function searchYelp() {
         var apiKey = "8tYUenwnc30zfZ_BU_6dIkyQM6X8MI1S9hGxquW7h0EtrBfG2vuhDsQNXqItzVm4822tyG6DZ_v-m0-H31za-2yCALyGz7A72nn3Tk95fMg7U_vouW72kaFg8wmsXHYx"
 
