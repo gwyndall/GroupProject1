@@ -781,7 +781,18 @@ function startSearch() {
           }
           return addString;
         }
-        var price = respData.price;
+        
+        // Fixing issue with some listings missing price info, function to print nothing instead of undefined
+        function pricePoint () {  
+
+          if (respData.price == undefined) {
+            return "";
+          } else {
+            return respData.price;
+          };
+        };
+        var price = pricePoint();
+        
         var nameField = busName + busAddr;
 
 
@@ -793,9 +804,9 @@ function startSearch() {
 
         // Creating an element to have the rating displayed
         var pRating = "<img class='star' src=" + starUrl + ">";
-
+        const yelpLogo = "<img class='ylogo' src='assets/images/Yelp_trademark_RGB.png'>"
         // Displaying the name and rating
-        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + '<br/>' + price + '</a>'
+        var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + yelpLogo + '<br/>' + price + '</a>'
         restCard.append(linkedBlock);
 
         // Adding restaurants to the display
@@ -803,7 +814,7 @@ function startSearch() {
 
         // Get Rating Image
         function starRtg(rating) {
-          //just trying a couple lines to see if I can get it to work
+    
           let rateImgFile = ""
 
           switch (rating) {

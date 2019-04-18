@@ -14,7 +14,12 @@ $(document).ready(function () {
         youtubeApi: "https://www.googleapis.com/youtube/v3/search",
         youTubeAPIkey: "AIzaSyCKMpw2nmPnon_gkh4EIXnbiAmrZNw-v4M"
     }
+<<<<<<< HEAD
     //Movie data that hold all the stuff for specific movie from the "response"
+=======
+    var database = firebase.database();
+
+>>>>>>> 64ba90385c78498f7d83ffea9ebcba9355c4880b
     let movieData = {
         movieName: "",
         theaters: []
@@ -55,7 +60,8 @@ $(document).ready(function () {
         })
         movieData.theaters = theaters;
         console.log(movieData);
-
+        database.ref().push(movieData.movieName);
+        database.ref().push(result.showtimes);
     }
     //this removes special characters from a passed string
     function removeSpecial(s) {
@@ -94,11 +100,18 @@ $(document).ready(function () {
         destroyMoviePage();
         buildMovieTimesDisplayPage();
         getLocation();
+<<<<<<< HEAD
         makeAPICall();
         // buildMovieData(responseObject.responseResult);
         // createTheaers();
         youTubeSearch(movieAndDinnerObject.movieName + "trailer");
         imageSearch(movieAndDinnerObject.movieName);
+=======
+        //makeAPICall();
+        buildMovieData(responseObject.responseResult);
+        createTheaters();
+        youTubeSearch(movieAndDinnerObject.movieName);
+>>>>>>> 64ba90385c78498f7d83ffea9ebcba9355c4880b
     });
     //location stuff
     function getLocation() {
@@ -106,6 +119,7 @@ $(document).ready(function () {
             console.log("about to make a call to get zipcode dynamically");
             navigator.geolocation.getCurrentPosition(showPosition, showError);
             console.log("lattitude: " + movieAndDinnerObject.lat + " Longitude : " + movieAndDinnerObject.long);
+            database.ref().push("lattitude: " + movieAndDinnerObject.lat + " Longitude : " + movieAndDinnerObject.long);
         } else {
             console.log("Geolocation is not supported by this browser.");
         }
@@ -156,9 +170,15 @@ $(document).ready(function () {
         return movieAndDinnerObject.movieShowtimeUrl + todaysDate + "&lat=" + movieAndDinnerObject.lat + "&lng=" + movieAndDinnerObject.long + movieAndDinnerObject.movieShowtimeAPIKey
         // http://data.tmsapi.com/v1.1/movies/showings?startDate=2019-04-10&lat=32.876709&lng=-117.206601&api_key=stp9q5rsr8afbrsfmmzvzubz
     }
+<<<<<<< HEAD
     //creates theaters and adds showtimes to the table
     function createTheaers() {
         console.log("the time: " + moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
+=======
+
+    function createTheaters(){
+        console.log("the time: "+ moment(movieData.theaters[0].showTimes[0].time).format("hh:mm a"));
+>>>>>>> 64ba90385c78498f7d83ffea9ebcba9355c4880b
         console.log(movieData.theaters[0].theaterName);
 
         $("#theaterBlock1").append($("<h4>").html(movieData.theaters[0].theaterName));
