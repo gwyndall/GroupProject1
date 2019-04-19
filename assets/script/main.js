@@ -360,9 +360,9 @@ $(document).ready(function () {
 
                 // Creating an element to have the rating displayed
                 var pRating = "<img class='star' src=" + starUrl + ">";
-
+                const yelpLogo = "<img class='ylogo' src='assets/images/Yelp_trademark_RGB.png'>"
                 // Displaying the name and rating
-                var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + '<br/>' + price + '</a>'
+                var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + yelpLogo + '<br/>' + price + '</a>'
                 restCard.append(linkedBlock);
 
                 // Adding restaurants to the display

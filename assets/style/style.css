@@ -145,9 +145,11 @@ h5 {
 
 .card img {
   max-width: 100% !important;
+  width: 310px;
   max-height: 300px;
   margin: 0px auto 15px auto;
   border-radius: 10px;
+
 }
 
 img.star {
@@ -159,7 +161,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 1.5rem;
-  color: white;
+  /* color: white; */
 }
 
 .card-title {
@@ -175,4 +177,15 @@ p {
   display: inline-flex;
   flex-flow: wrap;
   justify-content: space-around;
+}
+
+h5.card-title {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+img.ylogo {
+  width: 64px;
 }
