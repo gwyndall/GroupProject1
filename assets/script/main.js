@@ -253,8 +253,6 @@ $(document).ready(function () {
         var fandangoURL = $(this).attr("href");
         window.open(fandangoURL, "_blank");
     });
-    // var url = $(this).attr('href'); 
-    // window.open(url, '_blank');
 
     //create the navbar
     function buildNavbar() {
