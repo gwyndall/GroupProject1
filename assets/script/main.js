@@ -238,7 +238,7 @@ $(document).ready(function () {
 
         // showtimeBtn.attr("id", "time"+index).attr("href", element.fandangoLink).addClass("movieTimeButton");
         showtimeBtn.attr("id", "time" + index).addClass("movieTimeButton btn-sm");
-        showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink));
+        showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink).attr("id", "fandango-link"));
         return showtimeBtn;
     }
     // OnClick for all the buttons
@@ -246,6 +246,12 @@ $(document).ready(function () {
         event.preventDefault();
         destroyMoviePage();
         searchYelp();
+    });
+
+    $(document).on("click", "#fandango-link", function () {
+        event.preventDefault();
+        var fandangoURL = $(this).attr("href");
+        window.open(fandangoURL, "_blank");
     });
 
     //create the navbar
@@ -360,9 +366,9 @@ $(document).ready(function () {
 
                 // Creating an element to have the rating displayed
                 var pRating = "<img class='star' src=" + starUrl + ">";
-
+                const yelpLogo = "<img class='ylogo' src='assets/images/Yelp_trademark_RGB.png'>"
                 // Displaying the name and rating
-                var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + '<br/>' + price + '</a>'
+                var linkedBlock = '<a href="' + restLink + '">' + image + '<br/>' + nameField + '<br/>' + pRating + yelpLogo + '<br/>' + price + '</a>'
                 restCard.append(linkedBlock);
 
                 // Adding restaurants to the display
