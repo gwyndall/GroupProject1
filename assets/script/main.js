@@ -238,7 +238,7 @@ $(document).ready(function () {
 
         // showtimeBtn.attr("id", "time"+index).attr("href", element.fandangoLink).addClass("movieTimeButton");
         showtimeBtn.attr("id", "time" + index).addClass("movieTimeButton btn-sm");
-        showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink));
+        showtimeBtn.html(moment(element.time).format("hh:mm a")).append($("<a>").html(" T").attr("href", element.fandangoLink).attr("id", "fandango-link"));
         return showtimeBtn;
     }
     // OnClick for all the buttons
@@ -247,6 +247,14 @@ $(document).ready(function () {
         destroyMoviePage();
         searchYelp();
     });
+
+    $(document).on("click", "#fandango-link", function () {
+        event.preventDefault();
+        var fandangoURL = $(this).attr("href");
+        window.open(fandangoURL, "_blank");
+    });
+    // var url = $(this).attr('href'); 
+    // window.open(url, '_blank');
 
     //create the navbar
     function buildNavbar() {
